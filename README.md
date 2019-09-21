@@ -1,1 +1,1 @@
-# WGDI-
+# WGDI
