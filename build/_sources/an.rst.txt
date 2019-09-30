@@ -1,29 +1,24 @@
 Installation
 ------------
 
+Python package and command line interface (IDLE) for the analysis of whole genome duplications (WGDI). The environment required for installation is python3.
+
 Method
 """"""
 
-Python package and command line interface (CLI) for the analysis of whole genome duplications (WGDI). The environment required for installation is python3.
-
-Install directly with python
-
-We recommend using the pre-compiled binary wheels available on PyPI using:
+We recommend using a python installation directly by using the commands available on PyPI:
 
 .. code-block:: python
 
    pip install wgdi
 
-upgrade or uninstall with just one terminal command:
+upgrade with just one terminal command:
 
 .. code-block:: python
 
    pip install --upgrade wgdi
-   pip uninstall wgdi
 
-Or use git to download the latest version of the installation
-
-Then either download and decompress our source code, or fetch it using git. Now change directory to the Biopython source code folder and run:
+Or use `Git <https://git-scm.com/>`_ to get the latest version of the source code on github, and install our program.
 
 .. code-block:: python
 
@@ -34,6 +29,8 @@ Then either download and decompress our source code, or fetch it using git. Now 
 Third party software
 """"""""""""""""""""
 
+Some parts of WGDI use the following additional python libraries:
+
 `paml <http://abacus.gene.ucl.ac.uk/software/paml.html>`_
 
 `mafft <https://mafft.cbrc.jp/alignment/software/>`_
@@ -42,9 +39,13 @@ Third party software
 
 `pal2nal <http://www.bork.embl.de/pal2nal/#Download>`_
 
-When the above software is installed, put the required files into the same folder to begin our work.
+After you download and install the above package, create a new folder and then go to the folder to get to work.
 
-Unloading
+We recommend installing ``Git`` to work with ``WGDI``, so you can quickly switch working directories when you start a large number of tasks.
+
+Uninstall
 """""""""
 
-When you are not in need of wgdi, you can uninstall with ``pip uninstall wgdi``.
+If you don't need ``WGDI``, you can uninstall with ``pip uninstall wgdi``.
+
+

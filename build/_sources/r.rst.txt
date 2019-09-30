@@ -6,7 +6,6 @@ Description
 retain is................
 
 .. image :: _static/10.png
-   :align: left
 
 Parameters
 """"""""""

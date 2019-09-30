@@ -7,7 +7,6 @@ Description
 colinearscan is................
 
 .. image :: _static/5.png
-   :align: left
    
 Parameters
 """"""""""

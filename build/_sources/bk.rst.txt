@@ -7,7 +7,6 @@ Description
 blockks is................
 
 .. image :: _static/6.png
-   :align: left
    
 Parameters
 """"""""""

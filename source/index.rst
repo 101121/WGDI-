@@ -6,8 +6,6 @@
 Welcome to wgdi's documentation!
 ================================
 
-.. image :: _static/2.png
-
 .. tabularcolumns:: column spec
 
 ======= =================================================
@@ -19,26 +17,25 @@ License `BSD <http://creativecommons.org/licenses/BSD/>`_
 Description
 -----------
 
+.. image :: _static/2.png
+
+This is a gold standard for complex genomic analysis, including the construction of genomic homology maps, event-related collinear gene mapping, repeated gene classification,  molecular evolution distance estimation, and the determination and correction of evolution rate differences, etc.
 Finely identify the whole genome duplication events and generate the genomic homology tables.
 
 Table of Contents
+-----------------
 
 .. toctree::
    :maxdepth: 2
 
-   an
+   Introduction
+   Installation
    use
-
-.. index:: 
-   single: a; context
-   module: bk
-   module: cl
-   triple: ci; search; an
 
 Help
 ----
 
-When you have used wgdi, you have good suggestions or ideas to email the |author|_'s mailbox or submit changes on our |github|_.
+When you have used ``WGDI``, you have good suggestions or ideas to email the |author|_'s mailbox or submit changes on our |github|_.
 
 .. |author| replace:: PengChuan Sun
 .. _author: sunpengchuan@gmail.com
@@ -46,10 +43,3 @@ When you have used wgdi, you have good suggestions or ideas to email the |author
 .. |github| replace:: github
 .. _github: https://github.com/101121/WGDI-
 
-Shortcut
---------
-
-When a folder runs wgdi, wgdi will automatically generate results for you in the background, you can exit the folder and go to the next folder to start your work.
-
-.. image :: _static/4.png
-   :scale: 50%

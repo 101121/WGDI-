@@ -7,7 +7,6 @@ Description
 circos is................
 
 .. image :: _static/3.png
-   :align: left
 
 Parameters
 """"""""""

@@ -7,10 +7,8 @@ Description
 align is................
 
 .. image :: _static/8.png
-   :align: left
    
-   .. image :: _static/9.png
-   :align: right
+.. image :: _static/9.png
    
 Parameters
 """"""""""

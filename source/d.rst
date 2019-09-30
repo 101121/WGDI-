@@ -7,7 +7,6 @@ Description
 dotplot is................
 
 .. image :: _static/7.png
-   :align: left
    
 Parameters
 """"""""""

@@ -7,7 +7,6 @@ Description
 kspeaks is................
 
 .. image :: _static/11.png
-   :align: left
    
 Parameters
 """"""""""
