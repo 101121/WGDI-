@@ -1,17 +1,14 @@
 colinearscan
 ------------
 
-Description
-"""""""""""
-
 colinearscan is................
 
 .. image :: _static/5.png
    
-Parameters
-""""""""""
+.. rubric:: Parameters
 
-Use cmd to enter the folder ``wgdi -cl? > colinearscan.conf`` Take out the parameter file.
+
+Use command to enter the folder ``wgdi -cl ? > colinearscan.conf`` Take out the parameter file.
 
 .. image :: _static/colinearscan.png
 
@@ -35,20 +32,15 @@ Use cmd to enter the folder ``wgdi -cl? > colinearscan.conf`` Take out the param
    position = order
       position is ......
 	  
-Example
-"""""""
+.. rubric:: Example
 
-
-
-Modify
-""""""
+.. rubric:: Modify
 
 Modify the parameters that are right for you to run.
 
-Begin
-"""""
+.. rubric:: Begin
 
-Use `wgdi -cl colinearscan.conf` to run the parameter file and output the results you want.
+Use ``wgdi -cl colinearscan.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left

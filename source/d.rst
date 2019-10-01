@@ -1,17 +1,13 @@
 dotplot
 -------
 
-Description
-"""""""""""
-
 dotplot is................
 
 .. image :: _static/7.png
    
-Parameters
-""""""""""
+.. rubric:: Parameters
 
-Use cmd to enter the folder ``wgdi -d? > dotplot.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parameter file.
 
 .. image :: _static/dotplot.png
 
@@ -38,20 +34,15 @@ Use cmd to enter the folder ``wgdi -d? > dotplot.conf`` Take out the parameter f
    savefile = savefile(.png,.pdf)
       savefile is 
 
-Example
-"""""""
+.. rubric:: Example
 
-
-
-Modify
-""""""
+.. rubric:: Modify
 
 Modify the parameters that are right for you to run
 
-Begin
-"""""
+.. rubric:: Begin
 
-Use `wgdi -d dotplot.conf` to run the parameter file and output the results you want.
+Use ``wgdi -d dotplot.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left

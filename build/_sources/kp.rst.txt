@@ -1,17 +1,13 @@
 kspeaks
 -------
 
-Description
-"""""""""""
-
 kspeaks is................
 
 .. image :: _static/11.png
    
-Parameters
-""""""""""
+.. rubric:: Parameters
 
-Use cmd to enter the folder ``wgdi -kp? > kp.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -kp ? > kp.conf`` Take out the parameter file.
 
 .. image :: _static/kspeaks.png
 
@@ -53,18 +49,13 @@ Use cmd to enter the folder ``wgdi -kp? > kp.conf`` Take out the parameter file.
    savefile = ks medain savefile
       savefile is 
 
-Example
-"""""""
+.. rubric:: Example
 
-
-
-Modify
-""""""
+.. rubric:: Modify
 
 Modify the parameters that are right for you to run
 
-Begin
-"""""
+.. rubric:: Begin
 
 Use ``wgdi -kp kp.conf`` to run the parameter file and output the results you want.
 

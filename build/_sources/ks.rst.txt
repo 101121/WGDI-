@@ -1,15 +1,11 @@
 ks
 --
 
-Description
-"""""""""""
-
 ks is................
 
-Parameters
-""""""""""
+.. rubric:: Parameters
 
-Use cmd to enter the folder ``wgdi -ks? > ks.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -ks ? > ks.conf`` Take out the parameter file.
 
 .. image :: _static/ks.png
 
@@ -30,20 +26,15 @@ Use cmd to enter the folder ``wgdi -ks? > ks.conf`` Take out the parameter file.
    ks_file = ks result
       ks_file is 
 	  
-Example
-"""""""
-	  
+.. rubric:: Example
 
-	  
-Modify
-""""""
+.. rubric:: Modify
 
 Modify the parameters that are right for you to run
 
-Begin
-"""""
+.. rubric:: Begin
 
-Use `wgdi -ks ks.conf` to run the parameter file and output the results you want.
+Use ``wgdi -ks ks.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left

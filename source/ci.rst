@@ -1,17 +1,14 @@
 circos
 ------
 
-Description
-"""""""""""
-
 circos is................
 
 .. image :: _static/3.png
 
-Parameters
-""""""""""
+.. rubric:: Parameters
 
-Use cmd to enter the folder ``wgdi -ci? > circos.conf`` Take out the parameter file.
+
+Use command to enter the folder ``wgdi -ci ? > circos.conf`` Take out the parameter file.
 
 .. image :: _static/circos.png
 
@@ -44,18 +41,17 @@ Use cmd to enter the folder ``wgdi -ci? > circos.conf`` Take out the parameter f
    savefile = saving image(.png,.pdf)
       savefile is 
 
-Example
-"""""""
+.. rubric:: Example
+
 
 
 	  
-Modify
-""""""
+.. rubric:: Modify
+
 
 Modify the parameters that are right for you to run
 
-Begin
-"""""
+.. rubric:: Begin
 
 Use `wgdi –ci circos.conf` to run the parameter file and output the results you want.
 

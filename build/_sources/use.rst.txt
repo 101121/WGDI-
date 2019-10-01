@@ -34,7 +34,7 @@ Column Information  Explanation
 .. tabularcolumns:: column spec
 
 ====== =========== ==============================
-Column Information Explanation                     
+Column Information Explanation                   
 1                  Chromosome number
 2      Chr lens    Number of chromosome sequences
 3                  Number of chromosome genes

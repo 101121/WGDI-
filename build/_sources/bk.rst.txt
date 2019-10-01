@@ -1,17 +1,13 @@
 blockks
 -------
 
-Description
-"""""""""""
-
 blockks is................
 
 .. image :: _static/6.png
    
-Parameters
-""""""""""
+.. rubric:: Parameters
 
-Use cmd to enter the folder ``wgdi -bk? > blockks.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the parameter file.
 
 .. image :: _static/blockks.png
 
@@ -41,20 +37,16 @@ Use cmd to enter the folder ``wgdi -bk? > blockks.conf`` Take out the parameter 
    savefile = savefile(.png,.pdf)
       savefile is 
 
-Example
-"""""""
+.. rubric:: Example
 
 
+.. rubric:: Modify
 
-Modify
-""""""
+Modify the parameters that are right for you to run.
 
-Modify the parameters that are right for you to run
+.. rubric:: Begin
 
-Begin
-"""""
-
-Use `wgdi –bk blockks.conf` to run the parameter file and output the results you want.
+Use ``wgdi –bk blockks.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left

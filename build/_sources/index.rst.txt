@@ -6,14 +6,6 @@
 Welcome to WGDI's documentation!
 ================================
 
-.. tabularcolumns:: column spec
-
-======= =================================================
-Author  `Pengchuan Sun <https//github.com/sunpengchuan>`_
-Email   sunpengchuan@gmail.com
-License `BSD <http://creativecommons.org/licenses/BSD/>`_
-======= =================================================
-
 Description
 -----------
 
