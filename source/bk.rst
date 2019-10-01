@@ -17,57 +17,39 @@ Use cmd to enter the folder ``wgdi -bk? > blockks.conf`` Take out the parameter 
 
 .. glossary::
 
-   gff1 =  osm.gff
-      gff1 is ......
-
-   gff2 =  sb.gff
-      gff2 is ......
-
-   lens1 = osm_chrs.lens
-      lens1 is ......
-	  
-   lens2 = sb_chrs.lens
-      lens2 is ......
-
-   genome1_name =  Oryza sativa
-      genome1_name is ......
-	  
-   genome2_name =  Sorghum bicolor 
-      genome2_name is ......
-
+   colinearity = colinearity(colinearscan,mcscanx)
+      colinearity is 
+   
+   ks = ks file
+      ks is 
+   
    markersize = 1
-      markersize is ......
-	  
+      markersize is 
+   
    area = 0,1
-      area is ......
-	  
+      area is 
+   
+   block_length = int number
+      block_length is 
+   
    position = order
-      position is ......
-
-   colinearity = osm_sb.block.txt
-      colinearity is ......
-
-   ks = osm_sb.ks.txt
-      ks is ......
-
-   block_length = 20
-      block_length is ......
-
+      position is 
+   
    figsize = 10,10
-      figsize is ......
-	  
-   savefile = osm_sb.dotplot.order.ks.png
-      savefil is ......
-	  
-Modify
-""""""
-
-Modify the parameters that are right for you to run
+      figsize is 
+   
+   savefile = savefile(.png,.pdf)
+      savefile is 
 
 Example
 """""""
 
 
+
+Modify
+""""""
+
+Modify the parameters that are right for you to run
 
 Begin
 """""

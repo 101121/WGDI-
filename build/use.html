@@ -84,14 +84,18 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="a.html">align</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bk.html">blockks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ci.html">circos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cl.html">colinearscan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="d.html">dotplot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kp.html">kspeaks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ks.html">ks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="r.html">retain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#common-file">Common file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#convenient">Convenient</a></li>
 </ul>
 </li>
@@ -161,75 +165,156 @@
             
   <div class="section" id="usage">
 <h1>usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="_images/2.png"><img alt="_images/2.png" class="align-center" src="_images/2.png" style="width: 430.0px; height: 298.0px;" /></a>
-<p>Work in the diagram can be done by using wgdi</p>
+<a class="reference internal image-reference" href="_images/wgdi.png"><img alt="_images/wgdi.png" src="_images/wgdi.png" style="width: 648.0px; height: 481.0px;" /></a>
+<p>We support the use of <code class="docutils literal notranslate"><span class="pre">WGDI</span></code> to complete the work on the icon number.</p>
+<div class="section" id="common-file">
+<h2>Common file<a class="headerlink" href="#common-file" title="Permalink to this headline">¶</a></h2>
+<p>In the conf file, gff1, lens1, gff2, and lens2 represent the information of species 1 and species 2, respectively.</p>
+<ul class="simple">
+<li><p>gff</p></li>
+</ul>
+<img alt="_images/gff.png" src="_images/gff.png" />
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 25%" />
+<col style="width: 63%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Column</p></td>
+<td><p>Information</p></td>
+<td><p>Explanation</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Chr</p></td>
+<td><p>Chromosome number</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>ID</p></td>
+<td><p>Gene name</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Strat</p></td>
+<td><p>The location of the gene</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>End</p></td>
+<td><p>Gene ending position</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Direction</p></td>
+<td><p>Direction of the gene sequence</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Order name</p></td>
+<td><p>Full name</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>lens</p></li>
+</ul>
+<img alt="_images/lens.png" src="_images/lens.png" />
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 23%" />
+<col style="width: 64%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Column</p></td>
+<td><p>Information</p></td>
+<td><p>Explanation</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td></td>
+<td><p>Chromosome number</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Chr lens</p></td>
+<td><p>Number of chromosome sequences</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td></td>
+<td><p>Number of chromosome genes</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Blast is the output file for <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/">blast+</a> , in -6 and m-8 formats.</p></li>
+</ul>
+<p>In the conf file, gff1, lens1, gff2, and lens2 represent the files of species 1 and 2, respectively, and genome1_name and genome1_name represent the names of species 1 and 2, respectively. We will not explain in detail when we explain the parameters.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="a.html">align</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="a.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="a.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a.html#begin">Begin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bk.html">blockks</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bk.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bk.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bk.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bk.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bk.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bk.html#begin">Begin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ci.html">circos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="ci.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ci.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ci.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ci.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ci.html#begin">Begin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cl.html">colinearscan</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="cl.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cl.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cl.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cl.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cl.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cl.html#begin">Begin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="d.html">dotplot</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="d.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="d.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="d.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="d.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="d.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="d.html#begin">Begin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="kp.html">kspeaks</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="kp.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kp.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kp.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kp.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kp.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kp.html#begin">Begin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ks.html">ks</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="ks.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ks.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ks.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ks.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ks.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ks.html#begin">Begin</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="r.html">retain</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="r.html#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="r.html#parameters">Parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="r.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="r.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="r.html#modify">Modify</a></li>
 <li class="toctree-l2"><a class="reference internal" href="r.html#begin">Begin</a></li>
 </ul>
 </li>
 </ul>
+</div>
 </div>
 <div class="section" id="convenient">
 <h2>Convenient<a class="headerlink" href="#convenient" title="Permalink to this headline">¶</a></h2>

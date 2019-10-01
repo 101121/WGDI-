@@ -19,54 +19,43 @@ Use cmd to enter the folder ``wgdi -a? > align.conf`` Take out the parameter fil
 
 .. glossary::
 
-   alignment = osm_sb.alignment.txt
-      alignment is ......
+   genome1_name =  Genome1_name
+      genome1_name is 
 	  
-   gff1 =  osm.gff
-      gff1 is ......
-
-   gff2 =  sb.gff
-      gff2 is ......
-
-   lens1 = osm_chrs.lens
-      lens1 is ......
-	  
-   lens2 = sb_chrs.lens
-      lens2 is ......
-
-   genome1_name =  Oryza sosmiva
-      genome1_name is ......
-	  
-   genome2_name =  Sorghum bicolor
-      genome2_name is .....
+   genome2_name =  Genome2 name
+      genome2_name is 
 	  
    markersize = 0.5
-      markersize is ......
+      markersize is 
 	  
    position = order
-      position is ......
+      position is 
 	  
    colors = red,blue,green
-      dir is ......
-
-   position = order
-      position is ......
+      dir is 
 
    figsize = 10,10
-      figsize is ......
+      figsize is 
+	  
+   savefile = savefile(.csv)
+	  savefile is 
+	  
+   savefig = saveifg(.png,.pdf)
+      savefile is 
+	  
+   block_list = 1.txt
+      block_list is 
+   
+   blockinfo = block information file
+      blockinfo is 
 
-   savefile = osm_sb.alignment.order.png
-      savefile is ......
+Example
+"""""""
 
 Modify
 """"""
 
 Modify the parameters that are right for you to run
-
-Example
-"""""""
-
-
 
 Begin
 """""

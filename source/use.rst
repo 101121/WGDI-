@@ -1,11 +1,51 @@
 usage 
 -----
 
-.. image :: _static/2.png
+.. image :: _static/wgdi.png
    :scale: 100%
-   :align: center
 
-Work in the diagram can be done by using wgdi
+We support the use of ``WGDI`` to complete the work on the icon number.
+
+Common file
+"""""""""""
+
+In the conf file, gff1, lens1, gff2, and lens2 represent the information of species 1 and species 2, respectively.
+
+* gff
+
+.. image :: _static/gff.png
+
+.. tabularcolumns:: column spec
+
+====== ============ ==============================
+Column Information  Explanation
+1      Chr          Chromosome number 
+2      ID           Gene name
+3      Strat        The location of the gene 
+4      End          Gene ending position
+5      Direction    Direction of the gene sequence
+6      Order name   Full name
+====== ============ ==============================
+
+* lens
+
+.. image :: _static/lens.png
+
+.. tabularcolumns:: column spec
+
+====== =========== ==============================
+Column Information Explanation                     
+1                  Chromosome number
+2      Chr lens    Number of chromosome sequences
+3                  Number of chromosome genes
+====== =========== ==============================
+
+* Blast is the output file for `blast+ <ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/>`_ , in -6 and m-8 formats.
+
+In the conf file, gff1, lens1, gff2, and lens2 represent the files of species 1 and 2, respectively, and genome1_name and genome1_name represent the names of species 1 and 2, respectively. We will not explain in detail when we explain the parameters.
+
+Contents
+""""""""
 
 .. toctree::
 

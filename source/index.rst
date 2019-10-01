@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to wgdi's documentation!
+Welcome to WGDI's documentation!
 ================================
 
 .. tabularcolumns:: column spec
@@ -17,7 +17,7 @@ License `BSD <http://creativecommons.org/licenses/BSD/>`_
 Description
 -----------
 
-.. image :: _static/2.png
+.. image :: _static/wgdi.png
 
 This is a gold standard for complex genomic analysis, including the construction of genomic homology maps, event-related collinear gene mapping, repeated gene classification,  molecular evolution distance estimation, and the determination and correction of evolution rate differences, etc.
 Finely identify the whole genome duplication events and generate the genomic homology tables.
@@ -32,8 +32,8 @@ Table of Contents
    Installation
    use
 
-Help
-----
+Help us
+-------
 
 When you have used ``WGDI``, you have good suggestions or ideas to email the |author|_'s mailbox or submit changes on our |github|_.
 

@@ -53,20 +53,20 @@ Use cmd to enter the folder ``wgdi -kp? > kp.conf`` Take out the parameter file.
    savefile = ks medain savefile
       savefile is 
 
-Modify
-""""""
-
-Modify the parameters that are right for you to run
-
 Example
 """""""
 
 
 
+Modify
+""""""
+
+Modify the parameters that are right for you to run
+
 Begin
 """""
 
-Use `wgdi -kp kp.conf` to run the parameter file and output the results you want.
+Use ``wgdi -kp kp.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left

@@ -30,15 +30,15 @@ Use cmd to enter the folder ``wgdi -ks? > ks.conf`` Take out the parameter file.
    ks_file = ks result
       ks_file is 
 	  
+Example
+"""""""
+	  
+
+	  
 Modify
 """"""
 
 Modify the parameters that are right for you to run
-
-Example
-"""""""
-
-
 
 Begin
 """""

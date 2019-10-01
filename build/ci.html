@@ -84,21 +84,25 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="a.html">align</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bk.html">blockks</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">circos</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modify">Modify</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#begin">Begin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">circos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modify">Modify</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#begin">Begin</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="cl.html">colinearscan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="d.html">dotplot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kp.html">kspeaks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ks.html">ks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="r.html">retain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
 </ul>
 </li>
@@ -180,30 +184,32 @@
 <p>Use cmd to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ci?</span> <span class="pre">&gt;</span> <span class="pre">circos.conf</span></code> Take out the parameter file.</p>
 <img alt="_images/circos.png" src="_images/circos.png" />
 <dl class="glossary simple">
-<dt id="term-gff-cl-cp-gff">gff =  cl_cp.gff</dt><dt id="term-gff-is">gff is</dt><dt id="term-lens-cl-chrs-lens">lens = cl_chrs.lens</dt><dt id="term-lens-is">lens is</dt><dt id="term-radius-0-2">radius = 0.2</dt><dt id="term-radius-is">radius is</dt><dt id="term-angle-gap-0-05">angle_gap = 0.05</dt><dd><p>angle_gap is</p>
+<dt id="term-radius-0-2">radius = 0.2</dt><dd><p>radius is</p>
+</dd>
+<dt id="term-angle-gap-0-05">angle_gap = 0.05</dt><dd><p>angle_gap is</p>
 </dd>
 <dt id="term-ring-width-0-05">ring_width = 0.05</dt><dd><p>ring_width is</p>
 </dd>
-<dt id="term-colors-1-c-2-m-3-blue-4-gold-5-red-6-lawngreen-7-darkgreen-8-k-9-darkred-10-gray-11-ffff33-12-ffcc33-13-ccff33-14-cccccc-15-cccc99-16-cc99ff-17-cc9966-18-cc9900-19-cc66ff-20-c-21-m">colors  = 1:c,2:m,3:blue,4:gold,5:red,6:lawngreen,7:darkgreen,8:k,9:darkred,10:gray,11:#FFFF33,12:#FFCC33,13:#CCFF33,14:#CCCCCC,15:#CCCC99,16:#CC99FF,17:#CC9966,18:#CC9900,19:#CC66FF,20:c,21:m</dt><dd><p>colors is</p>
+<dt id="term-colors-color-confige-chr-color-chr-color">colors  = color confige(chr:color,chr:color)</dt><dd><p>colors is</p>
 </dd>
 <dt id="term-position-end">position = end</dt><dd><p>position is</p>
 </dd>
-<dt id="term-alignment-cl-cp-alignment-txt">alignment = cl_cp.alignment.txt</dt><dd><p>alignment is</p>
+<dt id="term-alignment-text-txt">alignment = text.txt</dt><dd><p>alignment is</p>
 </dd>
-<dt id="term-chr-label-cl">chr_label = Cl</dt><dd><p>chr_label is</p>
+<dt id="term-chr-label-shorthand">chr_label = shorthand</dt><dd><p>chr_label is</p>
 </dd>
 <dt id="term-figsize-10-10">figsize = 10,10</dt><dd><p>figsize is</p>
 </dd>
-<dt id="term-savefile-cl-png">savefile = cl.png</dt><dd><p>savefile is</p>
+<dt id="term-savefile-saving-image-png-pdf">savefile = saving image(.png,.pdf)</dt><dd><p>savefile is</p>
 </dd>
 </dl>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="modify">
 <h2>Modify<a class="headerlink" href="#modify" title="Permalink to this headline">¶</a></h2>
 <p>Modify the parameters that are right for you to run</p>
-</div>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="begin">
 <h2>Begin<a class="headerlink" href="#begin" title="Permalink to this headline">¶</a></h2>

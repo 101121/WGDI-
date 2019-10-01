@@ -17,14 +17,8 @@ Use cmd to enter the folder ``wgdi -ci? > circos.conf`` Take out the parameter f
 
 .. glossary::
 
-   gff =  cl_cp.gff
-   gff is 
-   
-   lens = cl_chrs.lens
-   lens is 
-   
    radius = 0.2
-   radius is 
+      radius is 
    
    angle_gap = 0.05
       angle_gap is 
@@ -32,33 +26,33 @@ Use cmd to enter the folder ``wgdi -ci? > circos.conf`` Take out the parameter f
    ring_width = 0.05
       ring_width is 
 	  
-   colors  = 1:c,2:m,3:blue,4:gold,5:red,6:lawngreen,7:darkgreen,8:k,9:darkred,10:gray,11:#FFFF33,12:#FFCC33,13:#CCFF33,14:#CCCCCC,15:#CCCC99,16:#CC99FF,17:#CC9966,18:#CC9900,19:#CC66FF,20:c,21:m
+   colors  = color confige(chr:color,chr:color)
       colors is 
 	  
    position = end
       position is 
 	  
-   alignment = cl_cp.alignment.txt
+   alignment = text.txt
       alignment is 
 	  
-   chr_label = Cl
+   chr_label = shorthand
       chr_label is 
 	  
    figsize = 10,10
       figsize is 
 	  
-   savefile = cl.png
+   savefile = saving image(.png,.pdf)
       savefile is 
-	  
-Modify
-""""""
-
-Modify the parameters that are right for you to run
 
 Example
 """""""
 
 
+	  
+Modify
+""""""
+
+Modify the parameters that are right for you to run
 
 Begin
 """""
