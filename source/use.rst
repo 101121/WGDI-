@@ -49,13 +49,13 @@ Contents
 
 .. toctree::
 
+   d
+   cl
+   ks
    a
    bk
    ci
-   cl
-   d
    kp
-   ks
    r
    
 Convenient

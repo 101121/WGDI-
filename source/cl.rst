@@ -12,26 +12,34 @@ Use command to enter the folder ``wgdi -cl ? > colinearscan.conf`` Take out the 
 
 .. image :: _static/colinearscan.png
 
-.. glossary::
+.. tabularcolumns:: column spec
 
-   dir = Output file
-      dir is ......
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+dir               Type: str    default: -
+              
+                  The directory of the generated file.
+---------------- ------------------------------------------------------------------------ 
+evalue            Type: float    default: 1e-5
 
-   evalue = 1e-5
-      evalue is ......
+                  evalue value in blast result.
+---------------- ------------------------------------------------------------------------         
+score             Type: int    default: 100
+				  
+                  Score value in blast results.
+---------------- ------------------------------------------------------------------------  
+mg                Type: int,int    default: 50,50
 
-   score = 100
-      score is ......
+                  This is the parameter of the colinearscan program mg.
+---------------- ------------------------------------------------------------------------ 
+repnum            Type: int    default: 20
+				  
+                  The maximum number of homologous genes is allowed 
+				  
+				  to be removed more than part of the population.
+================ ========================================================================
 
-   mg = 50,50 
-      mg is ......
-	  	  
-   repnum = 20
-      repnum is ......
-
-   position = order
-      position is ......
-	  
 .. rubric:: Example
 
 .. rubric:: Modify

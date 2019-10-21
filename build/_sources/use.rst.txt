@@ -49,11 +49,11 @@ Contents
 
 .. toctree::
 
+   d
+   cl
    a
    bk
    ci
-   cl
-   d
    kp
    ks
    r

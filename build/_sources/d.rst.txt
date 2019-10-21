@@ -11,28 +11,45 @@ Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parame
 
 .. image :: _static/dotplot.png
 
-.. glossary::
+.. tabularcolumns:: column spec
 
-   multiple= 1
-      multiple is 
-   
-   score=100
-      score is 
-   
-   evalue = 1e-5
-      evalue is 
-   
-   position = order
-      position is 
-   
-   markersize = 0.5
-      markersize is 
-   
-   figsize = 10,10
-      figsize is 
-   
-   savefile = savefile(.png,.pdf)
-      savefile is 
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+multiple          Type: int    default: 1
+              
+                  The best number of homologous genes.
+---------------- ------------------------------------------------------------------------         
+score             Type: int    default: 100
+				  
+                  Score value in blast results.
+---------------- ------------------------------------------------------------------------
+evalue            Type: float    default: 1e-5
+
+                  evalue value in blast result.
+---------------- ------------------------------------------------------------------------   
+repnum            Type: int    default: 20
+				  
+                  The maximum number of homologous genes is allowed 
+				  
+				  to be removed more than part of the population.
+---------------- ------------------------------------------------------------------------  
+position          Type: {start,order,end}    default: order
+
+                  The position of the gene corresponds to the gff file.
+---------------- ------------------------------------------------------------------------   
+markersiz         Type: float    default: 0.5
+  
+                  The size of the point in the plot.
+---------------- ------------------------------------------------------------------------
+figsize           Type: int,int    default: 10,10
+				  
+                  Controls the proportion of the size of the saved picture.
+---------------- ------------------------------------------------------------------------  
+savefile          Type: str    default: .png
+
+                  Save pictures support png, PDF, svg formats.
+================ ========================================================================
 
 .. rubric:: Example
 

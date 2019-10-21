@@ -9,44 +9,23 @@ Use command to enter the folder ``wgdi -a ? > align.conf`` Take out the paramete
 
 .. image :: _static/align.png
 
-.. glossary::
-
-   genome1_name =  Genome1_name
-      genome1_name is 
-	  
-   genome2_name =  Genome2 name
-      genome2_name is 
-	  
-   markersize = 0.5
-      markersize is 
-	  
-   position = order
-      position is 
-	  
-   colors = red,blue,green
-      dir is 
-
-   figsize = 10,10
-      figsize is 
-	  
-   savefile = savefile(.csv)
-	  savefile is 
-	  
-   savefig = saveifg(.png,.pdf)
-      savefile is 
-	  
-   block_list = 1.txt
-      block_list is 
-   
-   blockinfo = block information file
-      blockinfo is 
-
-====== =========== ==============================
-Column Information Explanation                     
-======             Chromosome number
-       Chr lens    Number of chromosome sequences
-                   Number of chromosome genes
-       =========== ==============================
+========== ==============================================
+markersize
+---------- ----------------------------------------------
+position
+---------- ----------------------------------------------
+colors				 
+---------- ----------------------------------------------
+figsize
+---------- ----------------------------------------------
+savefile
+---------- ----------------------------------------------
+savefig
+---------- ----------------------------------------------
+block_list
+---------- ----------------------------------------------
+blockinfo
+========== ==============================================
 
 .. rubric:: Example
 

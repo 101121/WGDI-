@@ -9,23 +9,33 @@ Use command to enter the folder ``wgdi -ks ? > ks.conf`` Take out the parameter 
 
 .. image :: _static/ks.png
 
-.. glossary::
+.. tabularcolumns:: column spec
 
-   cds_file =  cds file
-      cds_file is 
-	  
-   pep_file =  pep file
-      pep_file is 
-	  
-   align_software = muscle
-      align_software is 
-	  
-   pairs_file = gene pairs file
-      pairs_file is 
-	  
-   ks_file = ks result
-      ks_file is 
-	  
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+cds_file          Type:str     default:-
+                  
+                  A cds file of one or more genomes.				  
+---------------- ------------------------------------------------------------------------
+pep_file          Type:str     default:- 
+
+                  A protein file for one or more genomes. 非必需文件，如果不写这个参数，
+				  那么这个文件将通过biopython模块翻译cds_file得到。
+---------------- ------------------------------------------------------------------------
+align_software    Type:{muscle,mafft}     default: muscle
+
+                  多序列比对软件。
+---------------- ------------------------------------------------------------------------
+pairs_file        Type:str     default: 
+
+                  需要计算ka,ks的同源基因对，可以是按``,``或者``\t``分隔的列表，也可以是ColinearScan的输出结果。
+---------------- ------------------------------------------------------------------------
+ks_file           Type:str     default: 
+
+                  ks的输出文件名。
+================ ========================================================================	  
+
 .. rubric:: Example
 
 .. rubric:: Modify

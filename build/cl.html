@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="dotplot" href="d.html" />
+    <link rel="next" title="kspeaks" href="kp.html" />
     <link rel="prev" title="circos" href="ci.html" /> 
 </head>
 
@@ -86,11 +86,11 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">colinearscan</a></li>
-<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
@@ -172,20 +172,45 @@
 <p class="rubric">Parameters</p>
 <p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-cl</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">colinearscan.conf</span></code> Take out the parameter file.</p>
 <img alt="_images/colinearscan.png" src="_images/colinearscan.png" />
-<dl class="glossary simple">
-<dt id="term-dir-output-file">dir = Output file</dt><dd><p>dir is ……</p>
-</dd>
-<dt id="term-evalue-1e-5">evalue = 1e-5</dt><dd><p>evalue is ……</p>
-</dd>
-<dt id="term-score-100">score = 100</dt><dd><p>score is ……</p>
-</dd>
-<dt id="term-mg-50-50">mg = 50,50</dt><dd><p>mg is ……</p>
-</dd>
-<dt id="term-repnum-20">repnum = 20</dt><dd><p>repnum is ……</p>
-</dd>
-<dt id="term-position-order">position = order</dt><dd><p>position is ……</p>
-</dd>
-</dl>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>dir</p></td>
+<td><p>Type: str    default: -</p>
+<p>The directory of the generated file.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>evalue</p></td>
+<td><p>Type: float    default: 1e-5</p>
+<p>evalue value in blast result.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>score</p></td>
+<td><p>Type: int    default: 100</p>
+<p>Score value in blast results.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>mg</p></td>
+<td><p>Type: int,int    default: 50,50</p>
+<p>This is the parameter of the colinearscan program mg.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>repnum</p></td>
+<td><p>Type: int    default: 20</p>
+<p>The maximum number of homologous genes is allowed</p>
+<blockquote>
+<div><p>to be removed more than part of the population.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Example</p>
 <p class="rubric">Modify</p>
 <p>Modify the parameters that are right for you to run.</p>
@@ -202,7 +227,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="d.html" class="btn btn-neutral float-right" title="dotplot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kp.html" class="btn btn-neutral float-right" title="kspeaks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="ci.html" class="btn btn-neutral float-left" title="circos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
