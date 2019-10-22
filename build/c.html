@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>dotplot &mdash; WGDI latest documentation</title>
+  <title>correspondence &mdash; WGDI latest documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="colinearscan" href="cl.html" />
-    <link rel="prev" title="usage" href="use.html" /> 
+    <link rel="next" title="pf" href="pf.html" />
+    <link rel="prev" title="retain" href="r.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,7 +86,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
@@ -94,6 +94,9 @@
 <li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">correspondence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pf.html">pf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bi.html">bi</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
@@ -146,13 +149,13 @@
         
           <li><a href="use.html">usage</a> &raquo;</li>
         
-      <li>dotplot</li>
+      <li>correspondence</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/d.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/c.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,13 +168,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="dotplot">
-<h1>dotplot<a class="headerlink" href="#dotplot" title="Permalink to this headline">¶</a></h1>
-<p>dotplot is show homologous gene dotplot.</p>
-<img alt="_images/7.png" src="_images/7.png" />
+  <div class="section" id="correspondence">
+<h1>correspondence<a class="headerlink" href="#correspondence" title="Permalink to this headline">¶</a></h1>
+<p>correspondence is extract event-related genomic alignment.</p>
+<a class="reference internal image-reference" href="_images/6.png"><img alt="_images/6.png" src="_images/6.png" style="width: 571.2px; height: 571.2px;" /></a>
 <p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-d</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">dotplot.conf</span></code> Take out the parameter file.</p>
-<img alt="_images/dotplot.png" src="_images/dotplot.png" />
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-c</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">correspondence.conf</span></code> Take out the parameter file.</p>
+<img alt="_static/correspondence.png" src="_static/correspondence.png" />
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 18%" />
@@ -181,56 +184,37 @@
 <tr class="row-odd"><td><p>Parameters</p></td>
 <td><p>Standards and instructions</p></td>
 </tr>
-<tr class="row-even"><td><p>multiple</p></td>
-<td><p>Type: int    default: 1</p>
-<p>The best number of homologous genes.</p>
-</td>
+<tr class="row-even"><td><p>colinearity</p></td>
+<td><p>Type: str    default: -</p></td>
 </tr>
-<tr class="row-odd"><td><p>score</p></td>
-<td><p>Type: int    default: 100</p>
-<p>Score value in blast results.</p>
-</td>
+<tr class="row-odd"><td><p>ks</p></td>
+<td><p>Type: str    default: -</p></td>
 </tr>
-<tr class="row-even"><td><p>evalue</p></td>
-<td><p>Type: float    default: 1e-5</p>
-<p>evalue value in blast result.</p>
-</td>
+<tr class="row-even"><td><p>markersize</p></td>
+<td><p>Type: str    default: -</p></td>
 </tr>
-<tr class="row-odd"><td><p>repnum</p></td>
-<td><p>Type: int    default: 20</p>
-<p>The maximum number of homologous genes is allowed</p>
-<blockquote>
-<div><p>to be removed more than part of the population.</p>
-</div></blockquote>
-</td>
+<tr class="row-odd"><td><p>area</p></td>
+<td><p>Type: str    default: -</p></td>
 </tr>
-<tr class="row-even"><td><p>position</p></td>
-<td><p>Type: {start,order,end}    default: order</p>
-<p>The position of the gene corresponds to the gff file.</p>
-</td>
+<tr class="row-even"><td><p>block_length</p></td>
+<td><p>Type: str    default: -</p></td>
 </tr>
-<tr class="row-odd"><td><p>markersiz</p></td>
-<td><p>Type: float    default: 0.5</p>
-<p>The size of the point in the plot.</p>
-</td>
+<tr class="row-odd"><td><p>position</p></td>
+<td><p>Type: str    default: -</p></td>
 </tr>
 <tr class="row-even"><td><p>figsize</p></td>
-<td><p>Type: int,int    default: 10,10</p>
-<p>Controls the proportion of the size of the saved picture.</p>
-</td>
+<td><p>Type: str    default: -</p></td>
 </tr>
 <tr class="row-odd"><td><p>savefile</p></td>
-<td><p>Type: str    default: .png</p>
-<p>Save pictures support png, PDF, svg formats.</p>
-</td>
+<td><p>Type: str    default: -</p></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Example</p>
 <p class="rubric">Modify</p>
-<p>Modify the parameters that are right for you to run</p>
+<p>Modify the parameters that are right for you to run.</p>
 <p class="rubric">Begin</p>
-<p>Use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-d</span> <span class="pre">dotplot.conf</span></code> to run the parameter file and output the results you want.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">–c</span> <span class="pre">correspondence.conf</span></code> to run the parameter file and output the results you want.</p>
 <img alt="_images/1.png" class="align-left" src="_images/1.png" />
 </div>
 
@@ -242,10 +226,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="cl.html" class="btn btn-neutral float-right" title="colinearscan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pf.html" class="btn btn-neutral float-right" title="pf" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="use.html" class="btn btn-neutral float-left" title="usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="r.html" class="btn btn-neutral float-left" title="retain" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

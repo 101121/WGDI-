@@ -1,7 +1,7 @@
 ks
 --
 
-ks is................
+ks is calculate Ka/Ks for homologous gene pairs by Comdel.
 
 .. rubric:: Parameters
 
@@ -9,23 +9,38 @@ Use command to enter the folder ``wgdi -ks ? > ks.conf`` Take out the parameter 
 
 .. image :: _static/ks.png
 
-.. glossary::
+.. tabularcolumns:: column spec
 
-   cds_file =  cds file
-      cds_file is 
-	  
-   pep_file =  pep file
-      pep_file is 
-	  
-   align_software = muscle
-      align_software is 
-	  
-   pairs_file = gene pairs file
-      pairs_file is 
-	  
-   ks_file = ks result
-      ks_file is 
-	  
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+cds_file          Type:str     default:-
+                  
+                  A cds file of one or more genomes.				  
+---------------- ------------------------------------------------------------------------
+pep_file          Type:str     default:- 
+                  
+				  A protein file for one or more genomes. non-essential files, if you do 
+				  
+				  not write this parameter, Then this file will be translated through the
+				  
+				  biopython module cds-file.
+---------------- ------------------------------------------------------------------------
+align_software    Type:{muscle,mafft}     default: muscle
+
+                  Multi-sequence comparison software.
+---------------- ------------------------------------------------------------------------
+pairs_file        Type:str     default: 
+
+                  The same gene pairs of ks need to be calculated, either by pressing,
+				  
+				  or separating the list, or as the output of ColinearScan.
+---------------- ------------------------------------------------------------------------
+ks_file           Type:str     default: 
+
+                  The output file name of ks.
+================ ========================================================================	  
+
 .. rubric:: Example
 
 .. rubric:: Modify

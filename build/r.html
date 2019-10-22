@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="ks" href="ks.html" /> 
+    <link rel="prev" title="kspeaks" href="kp.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,13 +85,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
-<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">retain</a></li>
 </ul>
 </li>
@@ -166,29 +166,46 @@
             
   <div class="section" id="retain">
 <h1>retain<a class="headerlink" href="#retain" title="Permalink to this headline">¶</a></h1>
-<p>retain is…………….</p>
+<p>retain is show subgenomes in gene retention or genome fractionation.</p>
 <img alt="_images/10.png" src="_images/10.png" />
 <p class="rubric">Parameters</p>
 <p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-r</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">retain.conf</span></code> Take out the parameter file.</p>
 <img alt="_images/retain.png" src="_images/retain.png" />
-<dl class="glossary simple">
-<dt id="term-alignment-alignment-file">alignment = alignment file</dt><dd><p>alignment is</p>
-</dd>
-<dt id="term-colors-red-blue-green">colors = red,blue,green</dt><dd><p>colors is</p>
-</dd>
-<dt id="term-refgenome-shorthand">refgenome = shorthand</dt><dd><p>refgenome is</p>
-</dd>
-<dt id="term-figsize-10-12">figsize = 10,12</dt><dd><p>figsize is</p>
-</dd>
-<dt id="term-step-50">step = 50</dt><dd><p>step is</p>
-</dd>
-<dt id="term-ylabel-y-label">ylabel = y label</dt><dd><p>ylabel is</p>
-</dd>
-<dt id="term-savefile-retain-file-result">savefile = retain file (result)</dt><dd><p>savefile is</p>
-</dd>
-<dt id="term-figurefile-result-png-pdf">figurefile = result(.png,.pdf)</dt><dd><p>figurefile is</p>
-</dd>
-</dl>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>alignment</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>colors</p></td>
+<td><p>Type:{red,blue,green}     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>refgenome</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>figsize</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>step</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>ylabel</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>savefile</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>figurefile</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Example</p>
 <p class="rubric">Modify</p>
 <p>Modify the parameters that are right for you to run</p>
@@ -206,7 +223,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="ks.html" class="btn btn-neutral float-left" title="ks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="kp.html" class="btn btn-neutral float-left" title="kspeaks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

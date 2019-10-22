@@ -57,6 +57,9 @@ Contents
    ci
    kp
    r
+   c
+   pf
+   bi
    
 Convenient
 """"""""""

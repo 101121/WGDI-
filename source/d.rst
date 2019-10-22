@@ -1,7 +1,7 @@
 dotplot
 -------
 
-dotplot is................
+dotplot is show homologous gene dotplot.
 
 .. image :: _static/7.png
    

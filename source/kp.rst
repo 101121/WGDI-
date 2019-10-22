@@ -1,7 +1,7 @@
 kspeaks
 -------
 
-kspeaks is................
+kspeaks is a simple way to get ks peaks.
 
 .. image :: _static/11.png
    
@@ -11,43 +11,47 @@ Use command to enter the folder ``wgdi -kp ? > kp.conf`` Take out the parameter 
 
 .. image :: _static/kspeaks.png
 
-.. glossary::
+.. tabularcolumns:: column spec
 
-   blockinfo = block information (*.csv)
-      blockinfo is 
-	  
-   pvalue = 0.05
-      pvalue is 
-	  
-   tandem = true
-      tandem is 
-	  
-   block_length = int number
-      block_length is 
-	  
-   ks_area = 0,10
-      ks_area is 
-	  
-   multiple  = 1
-      multiple is 
-	  
-   homo = 0,1
-      homo is 
-	  
-   fontsize = 9
-      fontsize is 
-	  
-   area = 0,3
-      area is 
-	  
-   figsize = 10,6.18
-      figsize is 
-	  
-   savefig = saving image(.png,.pdf)
-      savefig is 
-	  
-   savefile = ks medain savefile
-      savefile is 
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+blockinfo         Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------
+pvalue            Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+tandem            Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+block_length      Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+ks_area           Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+multiple          Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+homo              Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+fontsize          Type:str     default:- 
+                   
+---------------- ------------------------------------------------------------------------	  
+area              Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+figsize           Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+savefig           Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+savefile          Type:str     default:- 
+                         
+================ ========================================================================
 
 .. rubric:: Example
 

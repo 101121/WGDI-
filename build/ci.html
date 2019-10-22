@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="colinearscan" href="cl.html" />
+    <link rel="next" title="kspeaks" href="kp.html" />
     <link rel="prev" title="blockks" href="bk.html" /> 
 </head>
 
@@ -86,13 +86,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">circos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
-<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
 </ul>
 </li>
@@ -167,31 +167,49 @@
             
   <div class="section" id="circos">
 <h1>circos<a class="headerlink" href="#circos" title="Permalink to this headline">¶</a></h1>
-<p>circos is…………….</p>
+<p>circos is a simple way to run circos.</p>
 <img alt="_images/3.png" src="_images/3.png" />
 <p class="rubric">Parameters</p>
 <p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ci</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">circos.conf</span></code> Take out the parameter file.</p>
 <img alt="_images/circos.png" src="_images/circos.png" />
-<dl class="glossary simple">
-<dt id="term-radius-0-2">radius = 0.2</dt><dd><p>radius is</p>
-</dd>
-<dt id="term-angle-gap-0-05">angle_gap = 0.05</dt><dd><p>angle_gap is</p>
-</dd>
-<dt id="term-ring-width-0-05">ring_width = 0.05</dt><dd><p>ring_width is</p>
-</dd>
-<dt id="term-colors-color-confige-chr-color-chr-color">colors  = color confige(chr:color,chr:color)</dt><dd><p>colors is</p>
-</dd>
-<dt id="term-position-end">position = end</dt><dd><p>position is</p>
-</dd>
-<dt id="term-alignment-text-txt">alignment = text.txt</dt><dd><p>alignment is</p>
-</dd>
-<dt id="term-chr-label-shorthand">chr_label = shorthand</dt><dd><p>chr_label is</p>
-</dd>
-<dt id="term-figsize-10-10">figsize = 10,10</dt><dd><p>figsize is</p>
-</dd>
-<dt id="term-savefile-saving-image-png-pdf">savefile = saving image(.png,.pdf)</dt><dd><p>savefile is</p>
-</dd>
-</dl>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>radius</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-odd"><td><p>angle_gap</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-even"><td><p>ring_width</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-odd"><td><p>colors</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-even"><td><p>position</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-odd"><td><p>alignment</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-even"><td><p>chr_label</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-odd"><td><p>figsize</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-even"><td><p>savefile</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Example</p>
 <p class="rubric">Modify</p>
 <p>Modify the parameters that are right for you to run</p>
@@ -208,7 +226,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="cl.html" class="btn btn-neutral float-right" title="colinearscan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kp.html" class="btn btn-neutral float-right" title="kspeaks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="bk.html" class="btn btn-neutral float-left" title="blockks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

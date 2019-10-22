@@ -1,7 +1,7 @@
 colinearscan
 ------------
 
-colinearscan is................
+colinearscan is a simple way to run ColinearScan.
 
 .. image :: _static/5.png
    

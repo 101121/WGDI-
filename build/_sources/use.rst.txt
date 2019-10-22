@@ -51,12 +51,15 @@ Contents
 
    d
    cl
+   ks
    a
    bk
    ci
    kp
-   ks
    r
+   c
+   pf
+   bi
    
 Convenient
 """"""""""

@@ -1,7 +1,7 @@
-blockks
+bi
 -------
 
-blockks is show Ks of blocks in a dotplot.
+bi is collinearity and Ks speculate whole genome duplication.
 
 .. image :: _static/6.png
   :scale: 80%
@@ -11,8 +11,6 @@ blockks is show Ks of blocks in a dotplot.
 Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the parameter file.
 
 .. image :: _static/blockks.png
-
-.. tabularcolumns:: column spec
 
 ================ ========================================================================
 Parameters        Standards and instructions
@@ -43,7 +41,7 @@ Modify the parameters that are right for you to run.
 
 .. rubric:: Begin
 
-Use ``wgdi –bk blockks.conf`` to run the parameter file and output the results you want.
+Use ``wgdi –bi blockinfo.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left

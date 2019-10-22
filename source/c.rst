@@ -1,18 +1,16 @@
-blockks
--------
+correspondence
+--------------
 
-blockks is show Ks of blocks in a dotplot.
+correspondence is extract event-related genomic alignment.
 
 .. image :: _static/6.png
   :scale: 80%
   
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -c ? > correspondence.conf`` Take out the parameter file.
 
-.. image :: _static/blockks.png
-
-.. tabularcolumns:: column spec
+.. image :: _static/correspondence.png
 
 ================ ========================================================================
 Parameters        Standards and instructions
@@ -43,7 +41,7 @@ Modify the parameters that are right for you to run.
 
 .. rubric:: Begin
 
-Use ``wgdi –bk blockks.conf`` to run the parameter file and output the results you want.
+Use ``wgdi –c correspondence.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left

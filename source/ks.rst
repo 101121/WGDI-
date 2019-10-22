@@ -1,7 +1,7 @@
 ks
 --
 
-ks is................
+ks is calculate Ka/Ks for homologous gene pairs by Comdel.
 
 .. rubric:: Parameters
 
@@ -19,21 +19,26 @@ cds_file          Type:str     default:-
                   A cds file of one or more genomes.				  
 ---------------- ------------------------------------------------------------------------
 pep_file          Type:str     default:- 
-
-                  A protein file for one or more genomes. 非必需文件，如果不写这个参数，
-				  那么这个文件将通过biopython模块翻译cds_file得到。
+                  
+				  A protein file for one or more genomes. non-essential files, if you do 
+				  
+				  not write this parameter, Then this file will be translated through the
+				  
+				  biopython module cds-file.
 ---------------- ------------------------------------------------------------------------
 align_software    Type:{muscle,mafft}     default: muscle
 
-                  多序列比对软件。
+                  Multi-sequence comparison software.
 ---------------- ------------------------------------------------------------------------
 pairs_file        Type:str     default: 
 
-                  需要计算ka,ks的同源基因对，可以是按``,``或者``\t``分隔的列表，也可以是ColinearScan的输出结果。
+                  The same gene pairs of ks need to be calculated, either by pressing,
+				  
+				  or separating the list, or as the output of ColinearScan.
 ---------------- ------------------------------------------------------------------------
 ks_file           Type:str     default: 
 
-                  ks的输出文件名。
+                  The output file name of ks.
 ================ ========================================================================	  
 
 .. rubric:: Example

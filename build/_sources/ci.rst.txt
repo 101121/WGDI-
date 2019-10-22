@@ -1,7 +1,7 @@
 circos
 ------
 
-circos is................
+circos is a simple way to run circos.
 
 .. image :: _static/3.png
 
@@ -12,40 +12,32 @@ Use command to enter the folder ``wgdi -ci ? > circos.conf`` Take out the parame
 
 .. image :: _static/circos.png
 
-.. glossary::
+.. tabularcolumns:: column spec
 
-   radius = 0.2
-      radius is 
-   
-   angle_gap = 0.05
-      angle_gap is 
-	  
-   ring_width = 0.05
-      ring_width is 
-	  
-   colors  = color confige(chr:color,chr:color)
-      colors is 
-	  
-   position = end
-      position is 
-	  
-   alignment = text.txt
-      alignment is 
-	  
-   chr_label = shorthand
-      chr_label is 
-	  
-   figsize = 10,10
-      figsize is 
-	  
-   savefile = saving image(.png,.pdf)
-      savefile is 
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+radius            Type: str    default: -
+---------------- ------------------------------------------------------------------------
+angle_gap         Type: str    default: -
+---------------- ------------------------------------------------------------------------
+ring_width        Type: str    default: -
+---------------- ------------------------------------------------------------------------
+colors            Type: str    default: -
+---------------- ------------------------------------------------------------------------
+position          Type: str    default: -
+---------------- ------------------------------------------------------------------------
+alignment         Type: str    default: -
+---------------- ------------------------------------------------------------------------
+chr_label         Type: str    default: -
+---------------- ------------------------------------------------------------------------
+figsize           Type: str    default: -
+---------------- ------------------------------------------------------------------------
+savefile          Type: str    default: -
+================ ========================================================================
 
 .. rubric:: Example
 
-
-
-	  
 .. rubric:: Modify
 
 

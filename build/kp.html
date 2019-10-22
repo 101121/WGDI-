@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ks" href="ks.html" />
-    <link rel="prev" title="dotplot" href="d.html" /> 
+    <link rel="next" title="retain" href="r.html" />
+    <link rel="prev" title="circos" href="ci.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,13 +86,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
-<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">kspeaks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
 </ul>
 </li>
@@ -167,37 +167,58 @@
             
   <div class="section" id="kspeaks">
 <h1>kspeaks<a class="headerlink" href="#kspeaks" title="Permalink to this headline">¶</a></h1>
-<p>kspeaks is…………….</p>
+<p>kspeaks is a simple way to get ks peaks.</p>
 <img alt="_images/11.png" src="_images/11.png" />
 <p class="rubric">Parameters</p>
 <p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-kp</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">kp.conf</span></code> Take out the parameter file.</p>
 <img alt="_images/kspeaks.png" src="_images/kspeaks.png" />
-<dl class="glossary simple">
-<dt id="term-blockinfo-block-information-csv">blockinfo = block information (<a href="#id1"><span class="problematic" id="id2">*</span></a>.csv)</dt><dd><p>blockinfo is</p>
-</dd>
-<dt id="term-pvalue-0-05">pvalue = 0.05</dt><dd><p>pvalue is</p>
-</dd>
-<dt id="term-tandem-true">tandem = true</dt><dd><p>tandem is</p>
-</dd>
-<dt id="term-block-length-int-number">block_length = int number</dt><dd><p>block_length is</p>
-</dd>
-<dt id="term-ks-area-0-10">ks_area = 0,10</dt><dd><p>ks_area is</p>
-</dd>
-<dt id="term-multiple-1">multiple  = 1</dt><dd><p>multiple is</p>
-</dd>
-<dt id="term-homo-0-1">homo = 0,1</dt><dd><p>homo is</p>
-</dd>
-<dt id="term-fontsize-9">fontsize = 9</dt><dd><p>fontsize is</p>
-</dd>
-<dt id="term-area-0-3">area = 0,3</dt><dd><p>area is</p>
-</dd>
-<dt id="term-figsize-10-6-18">figsize = 10,6.18</dt><dd><p>figsize is</p>
-</dd>
-<dt id="term-savefig-saving-image-png-pdf">savefig = saving image(.png,.pdf)</dt><dd><p>savefig is</p>
-</dd>
-<dt id="term-savefile-ks-medain-savefile">savefile = ks medain savefile</dt><dd><p>savefile is</p>
-</dd>
-</dl>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>blockinfo</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>pvalue</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>tandem</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>block_length</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>ks_area</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>multiple</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>homo</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>fontsize</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>area</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>figsize</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-even"><td><p>savefig</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+<tr class="row-odd"><td><p>savefile</p></td>
+<td><p>Type:str     default:-</p></td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Example</p>
 <p class="rubric">Modify</p>
 <p>Modify the parameters that are right for you to run</p>
@@ -214,10 +235,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ks.html" class="btn btn-neutral float-right" title="ks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="r.html" class="btn btn-neutral float-right" title="retain" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="d.html" class="btn btn-neutral float-left" title="dotplot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ci.html" class="btn btn-neutral float-left" title="circos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

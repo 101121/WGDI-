@@ -1,7 +1,7 @@
 retain
 ------
 
-retain is................
+retain is show subgenomes in gene retention or genome fractionation.
 
 .. image :: _static/10.png
 
@@ -11,31 +11,35 @@ Use command to enter the folder ``wgdi -r ? > retain.conf`` Take out the paramet
 
 .. image :: _static/retain.png
 
-.. glossary::
+.. tabularcolumns:: column spec
 
-   alignment = alignment file
-      alignment is 
-	  
-   colors = red,blue,green
-      colors is 
-	  
-   refgenome = shorthand
-      refgenome is 
-	  
-   figsize = 10,12
-      figsize is 
-	  
-   step = 50
-      step is 
-	  
-   ylabel = y label
-      ylabel is 
-	  
-   savefile = retain file (result)
-      savefile is 
-	  
-   figurefile = result(.png,.pdf)
-      figurefile is 
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+alignment         Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------
+colors            Type:{red,blue,green}     default:-
+                  
+---------------- ------------------------------------------------------------------------
+refgenome         Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+figsize           Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+step              Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+ylabel            Type:str     default:- 
+                  
+---------------- ------------------------------------------------------------------------	  
+savefile          Type:str     default:-  
+                  
+---------------- ------------------------------------------------------------------------	  
+figurefile        Type:str     default:- 
+                  
+================ ========================================================================
 
 .. rubric:: Example
 

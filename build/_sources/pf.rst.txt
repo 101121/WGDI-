@@ -1,14 +1,14 @@
-blockks
+pf
 -------
 
-blockks is show Ks of blocks in a dotplot.
+peaksfit is gaussian fitting of ks distribution.
 
 .. image :: _static/6.png
   :scale: 80%
   
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -pf ? > blockks.conf`` Take out the parameter file.
 
 .. image :: _static/blockks.png
 
@@ -36,14 +36,13 @@ savefile          Type: str    default: -
 
 .. rubric:: Example
 
-
 .. rubric:: Modify
 
 Modify the parameters that are right for you to run.
 
 .. rubric:: Begin
 
-Use ``wgdi –bk blockks.conf`` to run the parameter file and output the results you want.
+Use ``wgdi –pf blockks.conf`` to run the parameter file and output the results you want.
 
 .. image :: _static/1.png
    :align: left
