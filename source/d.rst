@@ -2,14 +2,27 @@ dotplot
 -------
 
 dotplot is show homologous gene dotplot.
-
-.. image :: _static/7.png
-   
+  
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parameter file.::
 
-.. image :: _static/dotplot.png
+   [dotplot]
+   blast= blast file
+   gffl =  gff1 file
+   gff2 =  gfi2 file
+   lens1 = lens1 file
+   lens2 = lens2 file
+   genome1_ name =  Genome1 name
+   genome2_ name =  Genome2 name
+   multiple  =1
+   score = 100
+   evalue = 1e-5
+   repnum = 20
+   position = order
+   markersize = 0.5
+   figsize = 10,10
+   savefile = savefile(. png, .pdf)
 
 .. tabularcolumns:: column spec
 
@@ -18,44 +31,44 @@ Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
 multiple          Type: int    default: 1
               
-                  The best number of homologous genes.
+                     The best number of homologous genes.
 ---------------- ------------------------------------------------------------------------         
 score             Type: int    default: 100
 				  
-                  Score value in blast results.
+                     Score value in blast results.
 ---------------- ------------------------------------------------------------------------
 evalue            Type: float    default: 1e-5
 
-                  evalue value in blast result.
+                     evalue value in blast result.
 ---------------- ------------------------------------------------------------------------   
 repnum            Type: int    default: 20
 				  
-                  The maximum number of homologous genes is allowed 
+                     The maximum number of homologous genes is allowed 
 				  
 				  to be removed more than part of the population.
 ---------------- ------------------------------------------------------------------------  
 position          Type: {start,order,end}    default: order
 
-                  The position of the gene corresponds to the gff file.
+                     The position of the gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------   
 markersiz         Type: float    default: 0.5
   
-                  The size of the point in the plot.
+                     The size of the point in the plot.
 ---------------- ------------------------------------------------------------------------
 figsize           Type: int,int    default: 10,10
 				  
-                  Controls the proportion of the size of the saved picture.
+                     Controls the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------  
 savefile          Type: str    default: .png
 
-                  Save pictures support png, PDF, svg formats.
+                     Save pictures support png, PDF, svg formats.
 ================ ========================================================================
 
 .. rubric:: Example
 
 .. rubric:: Modify
 
-Modify the parameters that are right for you to run
+Modify the parameters that are right for you to run.
 
 .. rubric:: Begin
 

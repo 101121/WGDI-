@@ -3,35 +3,31 @@ pf
 
 peaksfit is gaussian fitting of ks distribution.
 
-.. image :: _static/6.png
-  :scale: 80%
   
 .. rubric:: Parameters
 
 Use command to enter the folder ``wgdi -pf ? > blockks.conf`` Take out the parameter file.
-
-.. image :: _static/blockks.png
 
 .. tabularcolumns:: column spec
 
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-colinearity       Type: str    default: -
+-----------       Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-ks                Type: str    default: -
+-----------       Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-markersize        Type: str    default: -			 
+-----------       Type: str    default: -			 
 ---------------- ------------------------------------------------------------------------
-area              Type: str    default: -
+-----------       Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-block_length      Type: str    default: -
+-----------       Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-position          Type: str    default: -
+-----------       Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-figsize           Type: str    default: -
+-----------       Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-savefile          Type: str    default: -
+-----------       Type: str    default: -
 ================ ========================================================================
 
 .. rubric:: Example

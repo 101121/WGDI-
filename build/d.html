@@ -94,6 +94,9 @@
 <li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c.html">correspondence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pf.html">pf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bi.html">bi</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
@@ -168,10 +171,26 @@
   <div class="section" id="dotplot">
 <h1>dotplot<a class="headerlink" href="#dotplot" title="Permalink to this headline">¶</a></h1>
 <p>dotplot is show homologous gene dotplot.</p>
-<img alt="_images/7.png" src="_images/7.png" />
 <p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-d</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">dotplot.conf</span></code> Take out the parameter file.</p>
-<img alt="_images/dotplot.png" src="_images/dotplot.png" />
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-d</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">dotplot.conf</span></code> Take out the parameter file.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">dotplot</span><span class="p">]</span>
+<span class="n">blast</span><span class="o">=</span> <span class="n">blast</span> <span class="n">file</span>
+<span class="n">gffl</span> <span class="o">=</span>  <span class="n">gff1</span> <span class="n">file</span>
+<span class="n">gff2</span> <span class="o">=</span>  <span class="n">gfi2</span> <span class="n">file</span>
+<span class="n">lens1</span> <span class="o">=</span> <span class="n">lens1</span> <span class="n">file</span>
+<span class="n">lens2</span> <span class="o">=</span> <span class="n">lens2</span> <span class="n">file</span>
+<span class="n">genome1_</span> <span class="n">name</span> <span class="o">=</span>  <span class="n">Genome1</span> <span class="n">name</span>
+<span class="n">genome2_</span> <span class="n">name</span> <span class="o">=</span>  <span class="n">Genome2</span> <span class="n">name</span>
+<span class="n">multiple</span>  <span class="o">=</span><span class="mi">1</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">evalue</span> <span class="o">=</span> <span class="mf">1e-5</span>
+<span class="n">repnum</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">position</span> <span class="o">=</span> <span class="n">order</span>
+<span class="n">markersize</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">figsize</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span><span class="mi">10</span>
+<span class="n">savefile</span> <span class="o">=</span> <span class="n">savefile</span><span class="p">(</span><span class="o">.</span> <span class="n">png</span><span class="p">,</span> <span class="o">.</span><span class="n">pdf</span><span class="p">)</span>
+</pre></div>
+</div>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 18%" />
@@ -183,52 +202,68 @@
 </tr>
 <tr class="row-even"><td><p>multiple</p></td>
 <td><p>Type: int    default: 1</p>
-<p>The best number of homologous genes.</p>
+<blockquote>
+<div><p>The best number of homologous genes.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>score</p></td>
 <td><p>Type: int    default: 100</p>
-<p>Score value in blast results.</p>
+<blockquote>
+<div><p>Score value in blast results.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>evalue</p></td>
 <td><p>Type: float    default: 1e-5</p>
-<p>evalue value in blast result.</p>
+<blockquote>
+<div><p>evalue value in blast result.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>repnum</p></td>
 <td><p>Type: int    default: 20</p>
-<p>The maximum number of homologous genes is allowed</p>
+<blockquote>
+<div><p>The maximum number of homologous genes is allowed</p>
 <blockquote>
 <div><p>to be removed more than part of the population.</p>
+</div></blockquote>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>position</p></td>
 <td><p>Type: {start,order,end}    default: order</p>
-<p>The position of the gene corresponds to the gff file.</p>
+<blockquote>
+<div><p>The position of the gene corresponds to the gff file.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>markersiz</p></td>
 <td><p>Type: float    default: 0.5</p>
-<p>The size of the point in the plot.</p>
+<blockquote>
+<div><p>The size of the point in the plot.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>figsize</p></td>
 <td><p>Type: int,int    default: 10,10</p>
-<p>Controls the proportion of the size of the saved picture.</p>
+<blockquote>
+<div><p>Controls the proportion of the size of the saved picture.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>savefile</p></td>
 <td><p>Type: str    default: .png</p>
-<p>Save pictures support png, PDF, svg formats.</p>
+<blockquote>
+<div><p>Save pictures support png, PDF, svg formats.</p>
+</div></blockquote>
 </td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Example</p>
 <p class="rubric">Modify</p>
-<p>Modify the parameters that are right for you to run</p>
+<p>Modify the parameters that are right for you to run.</p>
 <p class="rubric">Begin</p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-d</span> <span class="pre">dotplot.conf</span></code> to run the parameter file and output the results you want.</p>
 <img alt="_images/1.png" class="align-left" src="_images/1.png" />

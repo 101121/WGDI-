@@ -94,6 +94,9 @@
 <li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c.html">correspondence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pf.html">pf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bi.html">bi</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
@@ -168,10 +171,22 @@
   <div class="section" id="colinearscan">
 <h1>colinearscan<a class="headerlink" href="#colinearscan" title="Permalink to this headline">¶</a></h1>
 <p>colinearscan is a simple way to run ColinearScan.</p>
-<img alt="_images/5.png" src="_images/5.png" />
 <p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-cl</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">colinearscan.conf</span></code> Take out the parameter file.</p>
-<img alt="_images/colinearscan.png" src="_images/colinearscan.png" />
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-cl</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">colinearscan.conf</span></code> Take out the parameter file.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">colinearscan</span><span class="p">]</span>
+<span class="n">gff1</span> <span class="o">=</span> <span class="n">gff1</span> <span class="n">file</span>
+<span class="n">gff2</span><span class="o">=</span> <span class="n">gff2</span> <span class="n">file</span>
+<span class="n">lens1</span> <span class="o">=</span> <span class="n">lens1</span> <span class="n">file</span>
+<span class="n">lens2</span> <span class="o">=</span> <span class="n">lens2</span> <span class="n">file</span>
+<span class="n">blast</span> <span class="o">=</span> <span class="n">blast</span> <span class="n">file</span>
+<span class="nb">dir</span> <span class="o">=</span> <span class="n">Output</span> <span class="n">file</span>
+<span class="n">evalue</span> <span class="o">=</span> <span class="mf">1e-5</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">mg</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span><span class="mi">50</span>
+<span class="n">repnum</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">positon</span> <span class="o">=</span> <span class="n">order</span>
+</pre></div>
+</div>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 18%" />
@@ -183,29 +198,39 @@
 </tr>
 <tr class="row-even"><td><p>dir</p></td>
 <td><p>Type: str    default: -</p>
-<p>The directory of the generated file.</p>
+<blockquote>
+<div><p>The directory of the generated file.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>evalue</p></td>
 <td><p>Type: float    default: 1e-5</p>
-<p>evalue value in blast result.</p>
+<blockquote>
+<div><p>evalue value in blast result.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>score</p></td>
 <td><p>Type: int    default: 100</p>
-<p>Score value in blast results.</p>
+<blockquote>
+<div><p>Score value in blast results.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>mg</p></td>
 <td><p>Type: int,int    default: 50,50</p>
-<p>This is the parameter of the colinearscan program mg.</p>
+<blockquote>
+<div><p>This is the parameter of the colinearscan program mg.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>repnum</p></td>
 <td><p>Type: int    default: 20</p>
-<p>The maximum number of homologous genes is allowed</p>
+<blockquote>
+<div><p>The maximum number of homologous genes is allowed</p>
 <blockquote>
 <div><p>to be removed more than part of the population.</p>
+</div></blockquote>
 </div></blockquote>
 </td>
 </tr>

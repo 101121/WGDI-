@@ -3,37 +3,42 @@ correspondence
 
 correspondence is extract event-related genomic alignment.
 
-.. image :: _static/6.png
-  :scale: 80%
-  
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -c ? > correspondence.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -c ? > correspondence.conf`` Take out the parameter file.::
 
-.. image :: _static/correspondence.png
+   [correspondence]
+   blockinfo = blockinfo file(.csv)
+   lens1 = lens1 file
+   lens2 = lens2 file
+   tandem = (true/false)
+   pvalue = 0.05
+   block_length = 5
+   multiple = 1
+   homo = 0,1
+   savefile = savefile(.csv) 
+
+.. tabularcolumns:: column spec
 
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-colinearity       Type: str    default: -
+blockinfo         Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-ks                Type: str    default: -
+tandem            Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-markersize        Type: str    default: -			 
----------------- ------------------------------------------------------------------------
-area              Type: str    default: -
+pvalue            Type: str    default: -
 ---------------- ------------------------------------------------------------------------
 block_length      Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-position          Type: str    default: -
+multiple          Type: str    default: -
 ---------------- ------------------------------------------------------------------------
-figsize           Type: str    default: -
+homo              Type: str    default: -
 ---------------- ------------------------------------------------------------------------
 savefile          Type: str    default: -
 ================ ========================================================================
 
 .. rubric:: Example
-
 
 .. rubric:: Modify
 

@@ -34,7 +34,8 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="pf" href="pf.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -78,10 +79,28 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="use.html">usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c.html">correspondence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pf.html">pf</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">bi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -127,6 +146,8 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
+          <li><a href="use.html">usage</a> &raquo;</li>
+        
       <li>bi</li>
     
     
@@ -149,10 +170,24 @@
   <div class="section" id="bi">
 <h1>bi<a class="headerlink" href="#bi" title="Permalink to this headline">¶</a></h1>
 <p>bi is collinearity and Ks speculate whole genome duplication.</p>
-<a class="reference internal image-reference" href="_images/6.png"><img alt="_images/6.png" src="_images/6.png" style="width: 571.2px; height: 571.2px;" /></a>
 <p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-bk</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">blockks.conf</span></code> Take out the parameter file.</p>
-<img alt="_images/blockks.png" src="_images/blockks.png" />
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-bk</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">blockks.conf</span></code> Take out the parameter file.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">b1ockinfo</span><span class="p">]</span>
+<span class="n">blast</span> <span class="o">=</span> <span class="n">blast</span> <span class="n">file</span>
+<span class="n">gff1</span> <span class="o">=</span> <span class="n">gffl</span> <span class="n">file</span>
+<span class="n">gff2</span> <span class="o">=</span> <span class="n">gff2</span> <span class="n">file</span>
+<span class="n">len31</span> <span class="o">=</span> <span class="n">lens1</span> <span class="n">file</span>
+<span class="mi">1</span><span class="n">en32</span> <span class="o">=</span> <span class="n">lens2</span> <span class="n">file</span>
+<span class="n">colinearity</span> <span class="o">=</span> <span class="n">colinearity</span> <span class="n">file</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">evalue</span> <span class="o">=</span> <span class="mf">1e-5</span>
+<span class="n">repnum</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">poaition</span> <span class="o">=</span> <span class="n">order</span>
+<span class="n">ks</span> <span class="o">=</span> <span class="n">ks</span> <span class="n">file</span>
+<span class="n">ks_col</span> <span class="o">=</span> <span class="n">ka_</span> <span class="n">NG86</span>
+<span class="n">savefile</span> <span class="o">=</span> <span class="n">block</span> <span class="n">information</span> <span class="p">(</span><span class="o">*.</span><span class="n">csv</span><span class="p">)</span>
+</pre></div>
+</div>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 18%" />
@@ -165,22 +200,22 @@
 <tr class="row-even"><td><p>colinearity</p></td>
 <td><p>Type: str    default: -</p></td>
 </tr>
+<tr class="row-odd"><td><p>score</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-even"><td><p>evalue</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-odd"><td><p>repnum</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
+<tr class="row-even"><td><p>poaition</p></td>
+<td><p>Type: str    default: -</p></td>
+</tr>
 <tr class="row-odd"><td><p>ks</p></td>
 <td><p>Type: str    default: -</p></td>
 </tr>
-<tr class="row-even"><td><p>markersize</p></td>
-<td><p>Type: str    default: -</p></td>
-</tr>
-<tr class="row-odd"><td><p>area</p></td>
-<td><p>Type: str    default: -</p></td>
-</tr>
-<tr class="row-even"><td><p>block_length</p></td>
-<td><p>Type: str    default: -</p></td>
-</tr>
-<tr class="row-odd"><td><p>position</p></td>
-<td><p>Type: str    default: -</p></td>
-</tr>
-<tr class="row-even"><td><p>figsize</p></td>
+<tr class="row-even"><td><p>ks_col</p></td>
 <td><p>Type: str    default: -</p></td>
 </tr>
 <tr class="row-odd"><td><p>savefile</p></td>
@@ -201,6 +236,13 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="pf.html" class="btn btn-neutral float-left" title="pf" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

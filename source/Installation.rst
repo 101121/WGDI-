@@ -37,7 +37,6 @@ Yang, Z. 1997. PAML: a program package for phylogenetic analysis by maximum like
 Computer Applications in BioSciences 13:555-556.
 Yang, Z. 2007. PAML 4: a program package for phylogenetic analysis by maximum likelihood.
 Molecular Biology and Evolution 24: 1586-1591
-(http://abacus.gene.ucl.ac.uk/software/paml.html). 
 
 `mafft <https://mafft.cbrc.jp/alignment/software/>`_   
 
@@ -57,11 +56,15 @@ Mikita Suyama, David Torrents, and Peer Bork (2006)
 PAL2NAL: robust conversion of protein sequence alignments into the corresponding codon alignments.
 Nucleic Acids Res. 34, W609-W612.
 
-After you download and install the above package. Go to the installation location of ``wgdi``, find the ``conf.ini`` located in the wgdi folder, and change the location of its module to the location where you installed the module.
+After you download and install the above package. Go to the installation location of ``WGDI``, find the ``conf.ini`` located in the wgdi folder, and change the location of its module to the location where you installed the module.
 
-.\\Python\\Python37-32\\Lib\\site-packages\\wgdi\\conf.ini
+.\\Python\\Python37-32\\Lib\\site-packages\\wgdi\\conf.ini::
 
-.. image :: _static/ini.png
+   [ini]
+   mafft_path = C:\bio\mafft-win\mafft.bat
+   pal2nal_path = C:\bio\[pal2nal.v14\pal2nal.pl
+   yn00_path = C:\bio\paml4.9j\bin\yn00.exe
+   muscle_path = C:\bio\muscle3.8.31_i86win32.exe
 
 We recommend installing ``Git`` to work with ``WGDI``, so you can quickly switch working directories when you start a large number of tasks.
 

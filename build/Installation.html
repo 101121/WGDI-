@@ -180,8 +180,7 @@
 <p>Yang, Z. 1997. PAML: a program package for phylogenetic analysis by maximum likelihood
 Computer Applications in BioSciences 13:555-556.
 Yang, Z. 2007. PAML 4: a program package for phylogenetic analysis by maximum likelihood.
-Molecular Biology and Evolution 24: 1586-1591
-(<a class="reference external" href="http://abacus.gene.ucl.ac.uk/software/paml.html">http://abacus.gene.ucl.ac.uk/software/paml.html</a>).</p>
+Molecular Biology and Evolution 24: 1586-1591</p>
 <p><a class="reference external" href="https://mafft.cbrc.jp/alignment/software/">mafft</a></p>
 <p>Levy, A, I Salas González, M. Mittelviefhaus, S Clingenpeel, S Herrera Paredes, J Miao, K Wang, G Devescovi, K Stillman, F Monteiro, BR Alvarez, DS Lundberg, T-Y Lu, S Lebeis, Z Jin, M McDonald, AP Klein, ME Feltcher, T Glavina del Rio, SR Grant, SL Doty, RE Ley, DA Pelletier, J Vorholt, SG Tringe†, T Woyke† and JL Dangl†
 (2017) Genomic determinants of bacterial adaptation to plants. Nature Genetics doi: 10.1038/s41588-017-0012-9.</p>
@@ -194,9 +193,15 @@ doi:10.1186/1471-2105-5-113</p>
 <p>Mikita Suyama, David Torrents, and Peer Bork (2006)
 PAL2NAL: robust conversion of protein sequence alignments into the corresponding codon alignments.
 Nucleic Acids Res. 34, W609-W612.</p>
-<p>After you download and install the above package. Go to the installation location of <code class="docutils literal notranslate"><span class="pre">wgdi</span></code>, find the <code class="docutils literal notranslate"><span class="pre">conf.ini</span></code> located in the wgdi folder, and change the location of its module to the location where you installed the module.</p>
-<p>.\Python\Python37-32\Lib\site-packages\wgdi\conf.ini</p>
-<img alt="_images/ini.png" src="_images/ini.png" />
+<p>After you download and install the above package. Go to the installation location of <code class="docutils literal notranslate"><span class="pre">WGDI</span></code>, find the <code class="docutils literal notranslate"><span class="pre">conf.ini</span></code> located in the wgdi folder, and change the location of its module to the location where you installed the module.</p>
+<p>.\Python\Python37-32\Lib\site-packages\wgdi\conf.ini:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">ini</span><span class="p">]</span>
+<span class="n">mafft_path</span> <span class="o">=</span> <span class="n">C</span><span class="p">:</span>\<span class="n">bio</span>\<span class="n">mafft</span><span class="o">-</span><span class="n">win</span>\<span class="n">mafft</span><span class="o">.</span><span class="n">bat</span>
+<span class="n">pal2nal_path</span> <span class="o">=</span> <span class="n">C</span><span class="p">:</span>\<span class="n">bio</span>\<span class="p">[</span><span class="n">pal2nal</span><span class="o">.</span><span class="n">v14</span>\<span class="n">pal2nal</span><span class="o">.</span><span class="n">pl</span>
+<span class="n">yn00_path</span> <span class="o">=</span> <span class="n">C</span><span class="p">:</span>\<span class="n">bio</span>\<span class="n">paml4</span><span class="o">.</span><span class="mi">9</span><span class="n">j</span>\<span class="nb">bin</span>\<span class="n">yn00</span><span class="o">.</span><span class="n">exe</span>
+<span class="n">muscle_path</span> <span class="o">=</span> <span class="n">C</span><span class="p">:</span>\<span class="n">bio</span>\<span class="n">muscle3</span><span class="o">.</span><span class="mf">8.31</span><span class="n">_i86win32</span><span class="o">.</span><span class="n">exe</span>
+</pre></div>
+</div>
 <p>We recommend installing <code class="docutils literal notranslate"><span class="pre">Git</span></code> to work with <code class="docutils literal notranslate"><span class="pre">WGDI</span></code>, so you can quickly switch working directories when you start a large number of tasks.</p>
 </div>
 <div class="section" id="uninstall">

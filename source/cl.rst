@@ -2,15 +2,23 @@ colinearscan
 ------------
 
 colinearscan is a simple way to run ColinearScan.
-
-.. image :: _static/5.png
    
 .. rubric:: Parameters
 
+Use command to enter the folder ``wgdi -cl ? > colinearscan.conf`` Take out the parameter file.::
 
-Use command to enter the folder ``wgdi -cl ? > colinearscan.conf`` Take out the parameter file.
-
-.. image :: _static/colinearscan.png
+   [colinearscan]
+   gff1 = gff1 file
+   gff2= gff2 file
+   lens1 = lens1 file
+   lens2 = lens2 file
+   blast = blast file
+   dir = Output file
+   evalue = 1e-5
+   score = 100
+   mg = 50,50
+   repnum = 20
+   positon = order
 
 .. tabularcolumns:: column spec
 
@@ -19,23 +27,23 @@ Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
 dir               Type: str    default: -
               
-                  The directory of the generated file.
+                     The directory of the generated file.
 ---------------- ------------------------------------------------------------------------ 
 evalue            Type: float    default: 1e-5
 
-                  evalue value in blast result.
+                     evalue value in blast result.
 ---------------- ------------------------------------------------------------------------         
 score             Type: int    default: 100
 				  
-                  Score value in blast results.
+                     Score value in blast results.
 ---------------- ------------------------------------------------------------------------  
 mg                Type: int,int    default: 50,50
 
-                  This is the parameter of the colinearscan program mg.
+                     This is the parameter of the colinearscan program mg.
 ---------------- ------------------------------------------------------------------------ 
 repnum            Type: int    default: 20
 				  
-                  The maximum number of homologous genes is allowed 
+                     The maximum number of homologous genes is allowed 
 				  
 				  to be removed more than part of the population.
 ================ ========================================================================
