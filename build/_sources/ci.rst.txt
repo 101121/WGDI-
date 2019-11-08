@@ -25,41 +25,41 @@ Use command to enter the folder ``wgdi -ci ? > circos.conf`` Take out the parame
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-radius            Type: float    default: -
+radius            Type: float    Default: 0.2
                      
-					 半径，o-1之间的数值
+					 Radius, value between 0-1.
 ---------------- ------------------------------------------------------------------------
-angle_gap         Type: float    default: -
+angle_gap         Type: float    Default: 0.05
                      
-					 染色体之间的gap
+					 Gap between chromosomes.
 ---------------- ------------------------------------------------------------------------
-ring_width        Type: float    default: -
+ring_width        Type: float    Default: 0.015
                      
-					 圆环的宽度
+					 The width of the ring.
 ---------------- ------------------------------------------------------------------------
-colors            Type: str    default: -
+colors            Type: str    Default: -
                      
-					 根据分组，设定多组颜色，用逗号分割
+					 Set multiple sets of colors based on grouping, split with a comma.
 ---------------- ------------------------------------------------------------------------
-position          Type: str    default: -
-                     
-					 The position of the gene corresponds to the gff file.
----------------- ------------------------------------------------------------------------
-alignment         Type: str    default: -
-                     
-					 共线性列表
----------------- ------------------------------------------------------------------------
-chr_label         Type: str    default: -
-                     
-					 染色体的简写
----------------- ------------------------------------------------------------------------
-figsize           Type: str    default: 10,10
-                     
-					 The size ratio of the image
----------------- ------------------------------------------------------------------------
-savefile          Type: str    default: -
+position          Type: {start,order,end}    Default: order
 
-                     生成的图片
+                     The position of the gene corresponds to the gff file.
+---------------- ------------------------------------------------------------------------
+alignment         Type: str    Default: -
+                     
+					 Colinear List.
+---------------- ------------------------------------------------------------------------
+chr_label         Type: str    Default: Shorthand
+                     
+					 A shorthand for chromosomes.
+---------------- ------------------------------------------------------------------------
+figsize           Type: int,int    Default: 10,10
+                     
+					 The size ratio of the image.
+---------------- ------------------------------------------------------------------------
+savefile          Type: {\*.png, \*.pdf}    Default: \*.png
+
+                     Save pictures support png, PDF formats.
 ================ ========================================================================
 
 .. rubric:: Example

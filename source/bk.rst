@@ -29,37 +29,37 @@ Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the param
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-colinearity       Type: str    default: -
+colinearity       Type: str    Default: -
                      
-					 colinearscan的结果文件
+					 Colinscan results file.
 ---------------- ------------------------------------------------------------------------
-ks                Type: str    default: -
+ks                Type: str    Default: -
                      
-					 ks计算结果
+					 ks calculation results.
 ---------------- ------------------------------------------------------------------------
-markersize        Type: str    default: -
+markersize        Type: str    Default: 1
                      
-					 控制点的大小			 
+					 The size of the control point.			 
 ---------------- ------------------------------------------------------------------------
-area              Type: str    default: -
+area              Type: str    Default: 0,1
                      
-					 显示ks的范围
+					 Show the range of ks.
 ---------------- ------------------------------------------------------------------------
-block_length      Type: str    default: -
+block_length      Type: str    Default: int number
                      
-					 显示共线性区块的最小长度
+					 Shows the minimum length of a collinear block.
 ---------------- ------------------------------------------------------------------------
-position          Type: str    default: -
+position          Type: str    Default: order
                      
 					 The position of the gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------
-figsize           Type: str    default: 10,10
-                     
-					 The size ratio of the image.
+figsize           Type: int,int    Default: 10,10
+				  
+                     Controls the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------
-savefile          Type: str    default: -
+savefile          Type: {\*.png, \*.pdf}    Default: \*.png
                      
-					 生成的图片
+					 Save pictures support png, PDF formats.
 ================ ========================================================================
 
 .. rubric:: Example

@@ -23,37 +23,37 @@ Use command to enter the folder ``wgdi -r ? > retain.conf`` Take out the paramet
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-alignment         Type:str     default:- 
+alignment         Type:str     Default: - 
                      
-					 共线性列表
+					 Colinear List.
 ---------------- ------------------------------------------------------------------------
-colors            Type:{red,blue,green}     default:-
+colors            Type:{red,blue,green}     Default:-
                   
-				     根据分组，设定多组颜色，用逗号分割
+				     Set multiple sets of colors based on grouping, split with a comma.
 ---------------- ------------------------------------------------------------------------
-refgenome         Type:str     default:- 
+refgenome         Type:str     Default: - 
                   
-				     参考物种的简写
+				     A short handbook of reference species.
 ---------------- ------------------------------------------------------------------------	  
-figsize           Type:str     default:- 
+figsize           Type:str     Default: - 
                   
-				     The size ratio of the image
+				     The size ratio of the image.
 ---------------- ------------------------------------------------------------------------	  
-step              Type:int     default:- 
+step              Type:int     Default: - 
                   
-				     滑动窗口的大小
+				     The size of the sliding window.
 ---------------- ------------------------------------------------------------------------	  
-ylabel            Type:str     default:- 
+ylabel            Type:str     Default: - 
                      
-					 图片的y轴标签
+					 The y-axis label of the picture.
 ---------------- ------------------------------------------------------------------------	  
-savefile          Type:str     default:-  
+savefile          Type:str     Default: -  
                   
-				     绘图的结果
+				     Results of the drawing.
 ---------------- ------------------------------------------------------------------------	  
-figurefile        Type:str     default:- 
+figurefile        Type:{\*.png, \*.pdf}     Default: \*.png 
                   
-				     生成的图片
+				     Save pictures support png, PDF formats.
 ================ ========================================================================
 
 .. rubric:: Example

@@ -11,13 +11,13 @@ Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the param
    blast = blast file
    gff1 = gffl file
    gff2 = gff2 file
-   len31 = lens1 file
-   1en32 = lens2 file
+   lens1 = lens1 file
+   1ens2 = lens2 file
    colinearity = colinearity file
    score = 100
    evalue = 1e-5
    repnum = 30
-   poaition = order
+   position = order
    ks = ks file
    ks_col = ka_ NG86
    savefile = block information (*.csv)
@@ -27,21 +27,37 @@ Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the param
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-colinearity       Type: str    default: -
+colinearity       Type: str    Default: -
+                     
+					 Colinscan results file.
 ---------------- ------------------------------------------------------------------------
-score             Type: str    default: -
+score             Type: int    Default: 100
+				  
+                     Score value in blast results.
 ---------------- ------------------------------------------------------------------------
-evalue            Type: str    default: -			 
+evalue            Type: float    Default: 1e-5
+
+                     evalue value in blast result.			 
 ---------------- ------------------------------------------------------------------------
-repnum            Type: str    default: -
+repnum            Type: int    Default: 20
+				  
+                     The maximum number of homologous genes is allowed 
+				  
+				  to be removed more than part of the population.
 ---------------- ------------------------------------------------------------------------
-poaition          Type: str    default: -
+position          Type: {start,order,end}    Default: order
+
+                     The position of the gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------
-ks                Type: str    default: -
+ks                Type: str    Default: -
+                     
+					 ks calculation results.
 ---------------- ------------------------------------------------------------------------
-ks_col            Type: str    default: -
+ks_col            Type: str    Default: -
 ---------------- ------------------------------------------------------------------------
-savefile          Type: str    default: -
+savefile          Type: str    Default: *.csv
+                   
+				     The resulting file.
 ================ ========================================================================
 
 .. rubric:: Example

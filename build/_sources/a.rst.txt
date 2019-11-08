@@ -28,35 +28,39 @@ Use command to enter the folder ``wgdi -a ? > align.conf`` Take out the paramete
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-markersize        Type: str    default: -
+markersize        Type: str    Default: 0.5
 
-                     控制点的大小					 
+                     The size of the control point.					 
 ---------------- ------------------------------------------------------------------------
-position          Type: str    default: order
+position          Type: str    Default: order
 
                      The position of the gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------
-colors		      Type: str    default: red	
+colors		      Type: {red,blue,green}    Default: red,blue,green
 	 
-                     根据分组，设定多组颜色，用逗号分割
+                     Set multiple sets of colors based on grouping, split with a comma.
 ---------------- ------------------------------------------------------------------------
-figsize           Type: str    default: 10,10
+figsize           Type: int,int    Default: 10,10
+				  
+                     Controls the proportion of the size of the saved picture.
+---------------- ------------------------------------------------------------------------
+savefile          Type: str    Default: \*.csv
 
-                     The size ratio of the image.
+                     A resulting collinear list.
 ---------------- ------------------------------------------------------------------------
-savefile          Type: str    default: -
+savefig           Type: {*.png,*.pdf}    Default: \*.png
 
-                     生成的共线性列表
+                     Save pictures support png, PDF formats.
 ---------------- ------------------------------------------------------------------------
-savefig           Type: str    default: -
+block_list        Type: str    Default: -
 
-                     生成的图片
+                     Add a class column to the blockinfo file to group and express 
+					 
+			      different groups with Raab numbers.     
 ---------------- ------------------------------------------------------------------------
-block_list        Type: str    default: -
-
-                     对blockinfo文件添加class一列进行分组，用拉伯数字表述不同的组别     
----------------- ------------------------------------------------------------------------
-blockinfo         Type: str    default: -
+blockinfo         Type:str     Default:- 
+                     
+					 Integrate collinear and ks files.
 ================ ========================================================================
 
 .. rubric:: Example

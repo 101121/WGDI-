@@ -11,17 +11,5 @@ This is a gold standard for complex genomic analysis, including the construction
 Result
 """"""
 
-.. image :: _static/6.png
+.. image :: _static/4.png
    :scale: 70%
-
-.. image :: _static/7.png
-   
-.. image :: _static/8.png
-   
-.. image :: _static/9.png
-
-.. image :: _static/10.png
-   :scale: 80%
-
-.. image :: _static/11.png
-   :scale: 80%

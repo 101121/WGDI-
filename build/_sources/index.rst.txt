@@ -27,7 +27,7 @@ Table of Contents
 Help us
 -------
 
-When you have used ``WGDI``, you have good suggestions or ideas to email the |author|_'s mailbox or submit changes on our |github|_.
+When you have used **WGDI**, you have good suggestions or ideas to email the |author|_'s mailbox or submit changes on our |github|_.
 
 .. |author| replace:: PengChuan Sun
 .. _author: sunpengchuan@gmail.com

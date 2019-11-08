@@ -175,13 +175,13 @@
 <p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-d</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">dotplot.conf</span></code> Take out the parameter file.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">dotplot</span><span class="p">]</span>
 <span class="n">blast</span><span class="o">=</span> <span class="n">blast</span> <span class="n">file</span>
-<span class="n">gffl</span> <span class="o">=</span>  <span class="n">gff1</span> <span class="n">file</span>
-<span class="n">gff2</span> <span class="o">=</span>  <span class="n">gfi2</span> <span class="n">file</span>
+<span class="n">gffl</span> <span class="o">=</span> <span class="n">gff1</span> <span class="n">file</span>
+<span class="n">gff2</span> <span class="o">=</span> <span class="n">gfi2</span> <span class="n">file</span>
 <span class="n">lens1</span> <span class="o">=</span> <span class="n">lens1</span> <span class="n">file</span>
 <span class="n">lens2</span> <span class="o">=</span> <span class="n">lens2</span> <span class="n">file</span>
 <span class="n">genome1_</span> <span class="n">name</span> <span class="o">=</span>  <span class="n">Genome1</span> <span class="n">name</span>
 <span class="n">genome2_</span> <span class="n">name</span> <span class="o">=</span>  <span class="n">Genome2</span> <span class="n">name</span>
-<span class="n">multiple</span>  <span class="o">=</span><span class="mi">1</span>
+<span class="n">multiple</span>  <span class="o">=</span> <span class="mi">1</span>
 <span class="n">score</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">evalue</span> <span class="o">=</span> <span class="mf">1e-5</span>
 <span class="n">repnum</span> <span class="o">=</span> <span class="mi">20</span>
@@ -201,28 +201,28 @@
 <td><p>Standards and instructions</p></td>
 </tr>
 <tr class="row-even"><td><p>multiple</p></td>
-<td><p>Type: int    default: 1</p>
+<td><p>Type: int    Default: 1</p>
 <blockquote>
 <div><p>The best number of homologous genes.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>score</p></td>
-<td><p>Type: int    default: 100</p>
+<td><p>Type: int    Default: 100</p>
 <blockquote>
 <div><p>Score value in blast results.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>evalue</p></td>
-<td><p>Type: float    default: 1e-5</p>
+<td><p>Type: float    Default: 1e-5</p>
 <blockquote>
 <div><p>evalue value in blast result.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>repnum</p></td>
-<td><p>Type: int    default: 20</p>
+<td><p>Type: int    Default: 20</p>
 <blockquote>
 <div><p>The maximum number of homologous genes is allowed</p>
 <blockquote>
@@ -232,28 +232,28 @@
 </td>
 </tr>
 <tr class="row-even"><td><p>position</p></td>
-<td><p>Type: {start,order,end}    default: order</p>
+<td><p>Type: {start,order,end}    Default: order</p>
 <blockquote>
 <div><p>The position of the gene corresponds to the gff file.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>markersiz</p></td>
-<td><p>Type: float    default: 0.5</p>
+<td><p>Type: float    Default: 0.5</p>
 <blockquote>
 <div><p>The size of the point in the plot.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>figsize</p></td>
-<td><p>Type: int,int    default: 10,10</p>
+<td><p>Type: int,int    Default: 10,10</p>
 <blockquote>
 <div><p>Controls the proportion of the size of the saved picture.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>savefile</p></td>
-<td><p>Type: str    default: .png</p>
+<td><p>Type: {*.png,*.pdf}    Default: *.png</p>
 <blockquote>
 <div><p>Save pictures support png, PDF, svg formats.</p>
 </div></blockquote>

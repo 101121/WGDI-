@@ -9,13 +9,13 @@ Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parame
 
    [dotplot]
    blast= blast file
-   gffl =  gff1 file
-   gff2 =  gfi2 file
+   gffl = gff1 file
+   gff2 = gfi2 file
    lens1 = lens1 file
    lens2 = lens2 file
    genome1_ name =  Genome1 name
    genome2_ name =  Genome2 name
-   multiple  =1
+   multiple  = 1
    score = 100
    evalue = 1e-5
    repnum = 20
@@ -29,37 +29,37 @@ Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parame
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-multiple          Type: int    default: 1
+multiple          Type: int    Default: 1
               
                      The best number of homologous genes.
 ---------------- ------------------------------------------------------------------------         
-score             Type: int    default: 100
+score             Type: int    Default: 100
 				  
                      Score value in blast results.
 ---------------- ------------------------------------------------------------------------
-evalue            Type: float    default: 1e-5
+evalue            Type: float    Default: 1e-5
 
                      evalue value in blast result.
 ---------------- ------------------------------------------------------------------------   
-repnum            Type: int    default: 20
+repnum            Type: int    Default: 20
 				  
                      The maximum number of homologous genes is allowed 
 				  
 				  to be removed more than part of the population.
 ---------------- ------------------------------------------------------------------------  
-position          Type: {start,order,end}    default: order
+position          Type: {start,order,end}    Default: order
 
                      The position of the gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------   
-markersiz         Type: float    default: 0.5
+markersiz         Type: float    Default: 0.5
   
                      The size of the point in the plot.
 ---------------- ------------------------------------------------------------------------
-figsize           Type: int,int    default: 10,10
+figsize           Type: int,int    Default: 10,10
 				  
                      Controls the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------  
-savefile          Type: str    default: .png
+savefile          Type: {\*.png,\*.pdf}    Default: \*.png
 
                      Save pictures support png, PDF, svg formats.
 ================ ========================================================================

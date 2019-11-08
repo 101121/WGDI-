@@ -19,11 +19,11 @@ Use command to enter the folder ``wgdi -ks ? > ks.conf`` Take out the parameter 
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-cds_file          Type:str     default:-
+cds_file          Type: str     Default: -
                   
                      A cds file of one or more genomes.				  
 ---------------- ------------------------------------------------------------------------
-pep_file          Type:str     default:- 
+pep_file          Type:str     Default:- 
                   
 				     A protein file for one or more genomes. non-essential files, if you 
 					 
@@ -31,17 +31,17 @@ pep_file          Type:str     default:-
 				  
 				  the biopython module cds-file.
 ---------------- ------------------------------------------------------------------------
-align_software    Type:{muscle,mafft}     default: muscle
+align_software    Type:{muscle,mafft}     Default: muscle
 
                      Multi-sequence comparison software.
 ---------------- ------------------------------------------------------------------------
-pairs_file        Type:str     default: 
+pairs_file        Type:str     Default: -
 
                      The same gene pairs of ks need to be calculated, either by pressing, 
 				  
 				  or separating the list, or as the output of ColinearScan.
 ---------------- ------------------------------------------------------------------------
-ks_file           Type:str     default: 
+ks_file           Type:str     Default: -
 
                      The output file name of ks.
 ================ ========================================================================	  

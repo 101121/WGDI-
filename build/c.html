@@ -187,33 +187,67 @@
 </div>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 18%" />
-<col style="width: 82%" />
+<col style="width: 17%" />
+<col style="width: 83%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Parameters</p></td>
 <td><p>Standards and instructions</p></td>
 </tr>
 <tr class="row-even"><td><p>blockinfo</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type: str     Default:-</p>
+<blockquote>
+<div><p>Integrate collinear and ks files.</p>
+</div></blockquote>
+</td>
 </tr>
 <tr class="row-odd"><td><p>tandem</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type: {true,false}     Default: true</p>
+<blockquote>
+<div><blockquote>
+<div><p>The criterion is that there are no more than 200 genes</p>
+</div></blockquote>
+<p>with a difference in genetic location.</p>
+</div></blockquote>
+</td>
 </tr>
 <tr class="row-even"><td><p>pvalue</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type: str     Default: 0.05</p>
+<blockquote>
+<div><p>P-value in collinear results.</p>
+</div></blockquote>
+</td>
 </tr>
 <tr class="row-odd"><td><p>block_length</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type: str     Default: int number</p>
+<blockquote>
+<div><p>Minimum length of collinear blocks.</p>
+</div></blockquote>
+</td>
 </tr>
 <tr class="row-even"><td><p>multiple</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type: str     Default: 1</p>
+<blockquote>
+<div><p>The optimal number of homologous genes.</p>
+</div></blockquote>
+</td>
 </tr>
 <tr class="row-odd"><td><p>homo</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type: str     Default: 0,1</p>
+<blockquote>
+<div><blockquote>
+<div><p>Collinear fragments favor the best matching values,</p>
+</div></blockquote>
+<p>with a range of -1, 1.</p>
+</div></blockquote>
+</td>
 </tr>
 <tr class="row-even"><td><p>savefile</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type: *.csv     Default: *.csv</p>
+<blockquote>
+<div><p>Save pictures support csv formats.</p>
+</div></blockquote>
+</td>
 </tr>
 </tbody>
 </table>

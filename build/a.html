@@ -200,14 +200,14 @@
 <td><p>Standards and instructions</p></td>
 </tr>
 <tr class="row-even"><td><p>markersize</p></td>
-<td><p>Type: str    default: -</p>
+<td><p>Type: str    Default: 0.5</p>
 <blockquote>
-<div><p>控制点的大小</p>
+<div><p>The size of the control point.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>position</p></td>
-<td><p>Type: str    default: order</p>
+<td><p>Type: str    Default: order</p>
 <blockquote>
 <div><p>The position of the gene corresponds to the gff file.</p>
 </div></blockquote>
@@ -215,41 +215,48 @@
 </tr>
 <tr class="row-even"><td><p>colors</p></td>
 <td><blockquote>
-<div><p>Type: str    default: red</p>
+<div><p>Type: {red,blue,green}    Default: red,blue,green</p>
 </div></blockquote>
-<p>根据分组，设定多组颜色，用逗号分割</p>
+<p>Set multiple sets of colors based on grouping, split with a comma.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p>figsize</p></td>
-<td><p>Type: str    default: 10,10</p>
+<td><p>Type: int,int    Default: 10,10</p>
 <blockquote>
-<div><p>The size ratio of the image.</p>
+<div><p>Controls the proportion of the size of the saved picture.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>savefile</p></td>
-<td><p>Type: str    default: -</p>
+<td><p>Type: str    Default: *.csv</p>
 <blockquote>
-<div><p>生成的共线性列表</p>
+<div><p>A resulting collinear list.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>savefig</p></td>
-<td><p>Type: str    default: -</p>
+<td><p>Type: {<em>.png,</em>.pdf}    Default: *.png</p>
 <blockquote>
-<div><p>生成的图片</p>
+<div><p>Save pictures support png, PDF formats.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-even"><td><p>block_list</p></td>
-<td><p>Type: str    default: -</p>
+<td><p>Type: str    Default: -</p>
 <blockquote>
-<div><p>对blockinfo文件添加class一列进行分组，用拉伯数字表述不同的组别</p>
+<div><p>Add a class column to the blockinfo file to group and express</p>
+<blockquote>
+<div><p>different groups with Raab numbers.</p>
+</div></blockquote>
 </div></blockquote>
 </td>
 </tr>
 <tr class="row-odd"><td><p>blockinfo</p></td>
-<td><p>Type: str    default: -</p></td>
+<td><p>Type:str     Default:-</p>
+<blockquote>
+<div><p>Integrate collinear and ks files.</p>
+</div></blockquote>
+</td>
 </tr>
 </tbody>
 </table>

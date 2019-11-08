@@ -169,14 +169,24 @@
   <div class="section" id="usage">
 <h1>usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="_images/wgdi.png"><img alt="_images/wgdi.png" src="_images/wgdi.png" style="width: 648.0px; height: 481.0px;" /></a>
-<p>We support the use of <code class="docutils literal notranslate"><span class="pre">WGDI</span></code> to complete the work on the icon number.</p>
+<p>Point open the <strong>Centents</strong> on the left.</p>
+<p>We support the use of <strong>WGDI</strong> to complete the work on the icon number.</p>
 <div class="section" id="common-file">
 <h2>Common file<a class="headerlink" href="#common-file" title="Permalink to this headline">¶</a></h2>
-<p>In the conf file, gff1, lens1, gff2, and lens2 represent the information of species 1 and species 2, respectively.</p>
+<ul class="simple">
+<li><p><a href="#id1"><span class="problematic" id="id2">*</span></a>.conf</p></li>
+</ul>
+<p>The .conf file contains the parameters required for the corresponding operation, which are read when wGDI is performed.
+Using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">*.conf</span></code> to generate needs to be in the same directory as the file mentioned in the parameter.
+And total.conf contains all the parameters, using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> is generated.</p>
+<p>In the <strong>conf file</strong>: <strong>gff1</strong>, <strong>lens1</strong>, <strong>gff2</strong>, and <strong>lens2</strong> represent the files of species 1 and 2, respectively.</p>
+<p>We will not explain in detail when we explain the parameters.</p>
+<p><strong>genome1_name</strong> and <strong>genome1_name</strong> represent the names of species 1 and 2, respectively.
+These parameters will be used to label the picture for your convenience.</p>
 <ul class="simple">
 <li><p>gff</p></li>
 </ul>
-<img alt="_images/gff.png" src="_images/gff.png" />
+<img alt="_images/vv1s.gff.png" src="_images/vv1s.gff.png" />
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 13%" />
@@ -217,12 +227,12 @@
 <ul class="simple">
 <li><p>lens</p></li>
 </ul>
-<img alt="_images/lens.png" src="_images/lens.png" />
+<img alt="_images/vv1s.lens.png" src="_images/vv1s.lens.png" />
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 23%" />
-<col style="width: 64%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 67%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Column</p></td>
@@ -241,12 +251,15 @@
 <td></td>
 <td><p>Number of chromosome genes</p></td>
 </tr>
+<tr class="row-odd"><td><p>*_random</p></td>
+<td></td>
+<td><p>Not slicing the genes on the chromosomes</p></td>
+</tr>
 </tbody>
 </table>
 <ul class="simple">
-<li><p>Blast is the output file for <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/">blast+</a> , in -6 and m-8 formats.</p></li>
+<li><p>The explosion is the output file of the <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/">blast+</a> ,available in the -6 and m-8 formats..</p></li>
 </ul>
-<p>In the conf file, gff1, lens1, gff2, and lens2 represent the files of species 1 and 2, respectively, and genome1_name and genome1_name represent the names of species 1 and 2, respectively. We will not explain in detail when we explain the parameters.</p>
 </div>
 <div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
@@ -269,10 +282,12 @@
 <div class="section" id="convenient">
 <h2>Convenient<a class="headerlink" href="#convenient" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>When a folder runs <code class="docutils literal notranslate"><span class="pre">WGDI</span></code>, <code class="docutils literal notranslate"><span class="pre">WGDI</span></code> automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">WGDI</span></code> performs the <code class="docutils literal notranslate"><span class="pre">conf</span></code> file for the current folder, so you can copy the <code class="docutils literal notranslate"><span class="pre">conf</span></code> file in bulk and make parameter modifications that apply to the target folder.</p></li>
+<li><p>You can use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> generates a <strong>total.conf</strong> file with all parameters, and when you modify the parameters and run <strong>WGDI</strong>, <strong>WGDI</strong> will only read the parameters corresponding to the <strong>total.conf</strong> file to execute your command.</p></li>
+<li><p>We put in the example of <strong>git</strong>’s official website, where all parameters are in the <strong>total.conf</strong> file.</p></li>
+<li><p>When a folder runs <strong>WGDI</strong>, <strong>WGDI</strong> automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.</p></li>
+<li><p><strong>WGDI</strong> performs the <strong>.conf</strong> file for the current folder, so you can copy the <strong>.conf</strong> file in bulk and make parameter modifications that apply to the target folder.</p></li>
 </ul>
-<a class="reference internal image-reference" href="_images/4.png"><img alt="_images/4.png" src="_images/4.png" style="width: 267.0px; height: 248.5px;" /></a>
+<a class="reference internal image-reference" href="_images/4.png"><img alt="_images/4.png" src="_images/4.png" style="width: 160.2px; height: 149.1px;" /></a>
 </div>
 </div>
 
